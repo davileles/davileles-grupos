@@ -290,7 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 <div class="cta-center">
-  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+  <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
     <span>Entrar no Grupo do <strong>WhatsApp — GRÁTIS</strong></span>
   </a>
@@ -575,7 +575,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="hl-orange">É DE GRAÇA.</span>
   </h2>
   <div style="display:flex;justify-content:center;">
-    <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+    <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
       <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
       <span>Quero Entrar no <strong>WhatsApp — GRÁTIS</strong></span>
     </a>
@@ -585,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer><p>&copy; 2025 <strong>Promos do Davi</strong> &middot; Todos os direitos reservados</p></footer>
 
 <div class="sticky-bar">
-  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+  <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
     <span>Entrar no Grupo — <strong>GRÁTIS</strong></span>
   </a>
@@ -683,13 +683,12 @@ setInterval(function(){ goTo(current+1); }, 3500);
 
 <script>
 (function () {
-  var BASE = 'https://grupo.tudosobrepromos.com/';
-  var LINKS = {
-    wpp:    BASE + 'groups',
-    grupos: BASE + 'wpp'
-  };
-  var PADRAO = BASE + 'geral';
-  var SELETOR = 'a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
+  // Convite direto do grupo. Este espelho nao passa pelo distribuidor do TSP,
+  // entao PADRAO e o proprio link do WhatsApp. Para variar o destino por
+  // campanha, basta cadastrar a chave em LINKS e chamar a pagina com ?g=chave.
+  var PADRAO = 'https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&p=i&ilr=4';
+  var LINKS = {};
+  var SELETOR = 'a[href*="chat.whatsapp.com/"], a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
 
   var chave = (new URLSearchParams(location.search).get('g') || '').toLowerCase();
   var destino = LINKS[chave] || PADRAO;
