@@ -699,29 +699,29 @@ setInterval(function(){ goTo(current+1); }, 3500);
 
 <script>
 (function () {
-  // Distribuidor no dominio proprio. E 'ir' e nao 'grupo' de proposito: a
-  // landing mora em grupos.ticapromos.com.br e uma letra de diferenca entre os
-  // dois hosts era convite a colar o link errado no anuncio.
-  var BASE = 'https://ir.ticapromos.com.br/';
-  var LINKS = {
-    wpp:    BASE + 'groups',
-    grupos: BASE + 'wpp'
-  };
-  var PADRAO = BASE + 'geral';
+  // Destino unico. Havia um roteamento por ?g= que mandava para slugs
+  // diferentes (/groups, /wpp); saiu porque nao era mais usado e o mapa estava
+  // invertido — ?g=wpp apontava para /groups e ?g=grupos para /wpp. Nunca deu
+  // problema so porque os tres slugs serviam os mesmos 13 grupos; no dia em
+  // que os pools divergissem, o anuncio mandaria gente para o lugar errado
+  // sem nenhum sinal de erro.
+  //
+  // E 'ir' e nao 'grupo' de proposito: a landing mora em
+  // grupos.ticapromos.com.br e uma letra de diferenca entre os dois hosts era
+  // convite a colar o link errado no anuncio.
+  var DESTINO = 'https://ir.ticapromos.com.br/geral';
   var SELETOR = 'a[href*="ir.ticapromos.com.br/"], a[href*="grupo.ticapromos.com.br/"], '
              + 'a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
 
   var params = new URLSearchParams(location.search);
-  var chave  = (params.get('g') || '').toLowerCase();
-  var destino = LINKS[chave] || PADRAO;
 
-  // Atribuicao de origem. O distribuidor conta o clique por ?o= e guarda em
-  // origens{} no grupos-links.json — sem isso todo trafego cai em "direto" e
-  // nao da para saber qual canal trouxe o membro. Prioridade: ?o= explicito na
-  // URL, senao utm_source (anuncio), senao 'landing'.
+  // Atribuicao de origem — isto FICA. O distribuidor conta o clique por ?o= e
+  // guarda em origens{} no grupos-links.json; sem isso todo trafego cai em
+  // "direto" e nao da para saber qual canal trouxe o membro. Prioridade: ?o=
+  // explicito na URL, senao utm_source (anuncio), senao 'landing'.
   var origem = (params.get('o') || params.get('utm_source') || 'landing')
                  .toLowerCase().slice(0, 40).replace(/[^\w.\-]/g, '') || 'landing';
-  destino += (destino.indexOf('?') === -1 ? '?' : '&') + 'o=' + encodeURIComponent(origem);
+  var destino = DESTINO + '?o=' + encodeURIComponent(origem);
 
   function aplicar() {
     var links = document.querySelectorAll(SELETOR);
