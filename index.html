@@ -710,8 +710,11 @@ setInterval(function(){ goTo(current+1); }, 3500);
   // grupos.ticapromos.com.br e uma letra de diferenca entre os dois hosts era
   // convite a colar o link errado no anuncio.
   var DESTINO = 'https://ir.ticapromos.com.br/geral';
-  var SELETOR = 'a[href*="ir.ticapromos.com.br/"], a[href*="grupo.ticapromos.com.br/"], '
-             + 'a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
+  // Casa com os <a> de CTA da pagina, que apontam todos para o distribuidor.
+  // Hosts de marcas e encurtadores anteriores saiam daqui: nenhum <a> do
+  // arquivo usava mais nenhum deles, eram seletores procurando o que nao
+  // existe.
+  var SELETOR = 'a[href*="ir.ticapromos.com.br/"]';
 
   var params = new URLSearchParams(location.search);
 
