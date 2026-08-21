@@ -10,16 +10,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
 <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="imgs/logo.png">
-  <link rel="apple-touch-icon" href="imgs/logo.png">
-  <title>Promos do Davi – Ofertas Imperdíveis Todo Dia</title>
+  <title>Tica Promos – o Tico acha, você economiza</title>
+  <meta name="description" content="O Tico voa o dia inteiro atrás de preço. O que ele tica cai no seu WhatsApp, de graça."/>
+  <meta property="og:title" content="Tica Promos"/>
+  <meta property="og:description" content="Ticou, avisou. Correu, levou. Achados de verdade no WhatsApp, todo dia."/>
+  <meta property="og:image" content="imgs/tico-og.png"/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="favicon.ico" sizes="any"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --orange: #ffa500; --dark-orange: #c63b00; --white: #fff; --black: #000;
-      --og: rgba(255,165,0,0.18); --dog: rgba(198,59,0,0.25);
+      /* Paleta do Tico. --orange e --dark-orange sao nomes legados mantidos
+         para nao reescrever 40 regras: hoje carregam coral e o vermelho da
+         moldura dos avatares. --navy e o fundo, no lugar do preto puro. */
+      --orange: #fa5150; --dark-orange: #d93636; --white: #fff; --black: #12141c;
+      --navy: #2e3348;
+      --og: rgba(250,81,80,0.18); --dog: rgba(217,54,54,0.25);
       --max: 1440px; --pad: clamp(16px, 3vw, 48px);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,8 +54,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .logo-wrap { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 28px; animation: fadeDown 0.8s ease both; }
     .logo-wrap img { width: 130px; height: 130px; object-fit: contain; border-radius: 24px; animation: logoPulse 2.5s ease-in-out infinite; }
     @keyframes logoPulse {
-      0%,100% { box-shadow: 0 8px 28px rgba(255,165,0,0.28); }
-      50%      { box-shadow: 0 8px 52px rgba(255,165,0,0.55), 0 0 80px rgba(198,59,0,0.2); }
+      0%,100% { box-shadow: 0 8px 28px rgba(250,81,80,0.28); }
+      50%      { box-shadow: 0 8px 52px rgba(250,81,80,0.55), 0 0 80px rgba(217,54,54,0.2); }
     }
     .logo-sub { font-size: 11px; font-weight: 700; letter-spacing: 4px; color: rgba(255,255,255,0.42); text-transform: uppercase; margin-top: 10px; }
 
@@ -55,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hl-orange { color: var(--orange); text-shadow: 0 0 28px var(--orange), 0 0 64px var(--dark-orange); }
     .hero-sub { margin: 22px auto 0; font-size: clamp(15px, 1.6vw, 20px); font-weight: 600; color: rgba(255,255,255,0.7); max-width: 780px; line-height: 1.65; animation: fadeUp 0.9s 0.4s ease both; }
 
-    .ticker-wrap { margin: 26px auto 0; background: linear-gradient(90deg, var(--dark-orange), #ff6a00); border-radius: 999px; display: inline-block; padding: 8px 24px; animation: fadeUp 0.9s 0.5s ease both; }
+    .ticker-wrap { margin: 26px auto 0; background: linear-gradient(90deg, var(--dark-orange), var(--orange)); border-radius: 999px; display: inline-block; padding: 8px 24px; animation: fadeUp 0.9s 0.5s ease both; }
     .ticker-wrap span { font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
     .ticker-dot { display: inline-block; width: 8px; height: 8px; background:#fff; border-radius:50%; margin-right:8px; animation: blink 1s ease infinite; }
     @keyframes blink { 0%,100%{ opacity:1 } 50%{ opacity:0.15 } }
@@ -66,13 +75,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn-wpp:active { transform: scale(0.97); }
     .btn-icon { font-size: 24px; flex-shrink: 0; }
 
-    .section-tag { display: inline-block; background: rgba(255,165,0,0.1); border: 1px solid rgba(255,165,0,0.28); color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
+    .section-tag { display: inline-block; background: rgba(250,81,80,0.1); border: 1px solid rgba(250,81,80,0.28); color: var(--orange); font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
     .section-title { font-family:'Bebas Neue',sans-serif; font-size: clamp(36px, 4vw, 58px); line-height: 1; margin-bottom: 28px; }
 
     .divider { position: relative; z-index: 2; margin: 56px auto; width: 70%; max-width: 600px; height: 1px; background: linear-gradient(90deg, transparent, var(--orange), transparent); }
 
     .counters-row { display: flex; justify-content: center; gap: clamp(12px, 2vw, 32px); flex-wrap: wrap; margin-top: 20px; }
-    .counter-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,165,0,0.2); border-radius: 20px; padding: clamp(18px, 2.5vw, 36px) clamp(28px, 4vw, 60px); min-width: 140px; flex: 1; max-width: 260px; text-align: center; backdrop-filter: blur(8px); transition: border-color 0.3s; }
+    .counter-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(250,81,80,0.2); border-radius: 20px; padding: clamp(18px, 2.5vw, 36px) clamp(28px, 4vw, 60px); min-width: 140px; flex: 1; max-width: 260px; text-align: center; backdrop-filter: blur(8px); transition: border-color 0.3s; }
     .counter-card:hover { border-color: var(--orange); }
     .counter-num { font-family:'Bebas Neue',sans-serif; font-size: clamp(42px, 4vw, 64px); color: var(--orange); line-height: 1; text-shadow: 0 0 18px var(--orange); }
     .counter-label { font-size: 11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.42); margin-top:4px; }
@@ -131,7 +140,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .benefits-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
     .benefit-item { display: flex; align-items: flex-start; gap: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 18px 20px; transition: border-color 0.3s, background 0.3s; }
-    .benefit-item:hover { border-color: rgba(255,165,0,0.35); background: rgba(255,165,0,0.05); }
+    .benefit-item:hover { border-color: rgba(250,81,80,0.35); background: rgba(250,81,80,0.05); }
     .benefit-emoji { font-size: 26px; flex-shrink:0; line-height:1.3; }
     .benefit-text strong { display:block; font-size:15px; font-weight:800; margin-bottom:3px; }
     .benefit-text span   { font-size:13px; color:rgba(255,255,255,0.5); line-height:1.5; }
@@ -141,9 +150,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .carousel-track { display: flex; gap: 16px; width: max-content; animation: carouselScroll 28s linear infinite; }
     .carousel-track:hover { animation-play-state: paused; }
     @keyframes carouselScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    .offer-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,165,0,0.15); border-radius: 16px; overflow: hidden; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s; width: 220px; flex-shrink: 0; cursor: pointer; }
+    .offer-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(250,81,80,0.15); border-radius: 16px; overflow: hidden; transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s; width: 220px; flex-shrink: 0; cursor: pointer; }
     @media(max-width:600px){ .offer-card { width: 170px; } }
-    .offer-card:hover { border-color: var(--orange); transform: translateY(-5px); box-shadow: 0 16px 40px rgba(255,165,0,0.18); }
+    .offer-card:hover { border-color: var(--orange); transform: translateY(-5px); box-shadow: 0 16px 40px rgba(250,81,80,0.18); }
     .offer-img-wrap { width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #111; display: flex; align-items: center; justify-content: center; position: relative; }
     .offer-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
     .offer-card:hover .offer-img-wrap img { transform: scale(1.05); }
@@ -157,7 +166,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .feedback-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; max-width: 1100px; margin: 0 auto; }
     @media(max-width:720px){ .feedback-grid { grid-template-columns: 1fr; max-width: 320px; } }
-    .feedback-bubble { border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,165,0,0.15); transition: border-color 0.3s, transform 0.3s; }
+    .feedback-bubble { border-radius: 16px; overflow: hidden; border: 1px solid rgba(250,81,80,0.15); transition: border-color 0.3s, transform 0.3s; }
     .feedback-bubble:hover { border-color: var(--orange); transform: translateY(-4px); }
     .feedback-bubble img { width: 100%; height: auto; display: block; }
     .fb-avatar { width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 900; background: linear-gradient(135deg, var(--dark-orange), var(--orange)); }
@@ -170,12 +179,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .bottom-cta { position: relative; z-index: 2; text-align: center; padding: 0 var(--pad) 60px; max-width: var(--max); margin: 0 auto; }
     .urgency-bar { background: linear-gradient(90deg, var(--dark-orange), var(--orange)); padding: 14px 24px; border-radius: 14px; margin-bottom: 28px; font-size: 15px; font-weight: 800; color:#fff; text-transform: uppercase; letter-spacing: 1px; max-width: 600px; margin-left: auto; margin-right: auto; }
 
-    .sticky-bar { position: fixed; bottom:0; left:0; right:0; z-index:100; background: rgba(0,0,0,0.93); backdrop-filter: blur(14px); border-top: 1px solid rgba(255,165,0,0.18); padding: 10px 20px; display: flex; justify-content: center; }
+    .sticky-bar { position: fixed; bottom:0; left:0; right:0; z-index:100; background: rgba(0,0,0,0.93); backdrop-filter: blur(14px); border-top: 1px solid rgba(250,81,80,0.18); padding: 10px 20px; display: flex; justify-content: center; }
     .sticky-bar .btn-wpp { max-width:420px; font-size:15px; padding:14px 32px; }
 
     footer { position:relative; z-index:2; text-align:center; padding:24px; border-top:1px solid rgba(255,255,255,0.05); }
     footer p { font-size:12px; color:rgba(255,255,255,0.2); letter-spacing:1px; }
-    footer strong { color:rgba(255,165,0,0.5); }
+    footer strong { color:rgba(250,81,80,0.5); }
 
 
     /* SCREENSHOTS GRID */
@@ -190,14 +199,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .screenshot-card {
       border-radius: 20px;
       overflow: hidden;
-      border: 1px solid rgba(255,165,0,0.18);
+      border: 1px solid rgba(250,81,80,0.18);
       background: #111;
       transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
     }
     .screenshot-card:hover {
       transform: translateY(-6px);
       border-color: var(--orange);
-      box-shadow: 0 20px 50px rgba(255,165,0,0.15);
+      box-shadow: 0 20px 50px rgba(250,81,80,0.15);
     }
     .screenshot-card img {
       width: 100%;
@@ -209,7 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-weight: 800;
       color: rgba(255,255,255,0.82);
       line-height: 1.4;
-      border-top: 1px solid rgba(255,165,0,0.12);
+      border-top: 1px solid rgba(250,81,80,0.12);
     }
 
 
@@ -274,33 +283,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header>
   <div class="logo-wrap">
-    <img src="imgs/logo.png" alt="Promos do Davi">
-    <div class="logo-sub">Grupo Oficial de Ofertas &middot; WhatsApp</div>
+    <img src="imgs/tico.png" alt="Tico — Tica Promos">
+    <div class="logo-sub">Tica Promos &middot; ofertas no WhatsApp</div>
   </div>
   <h1 class="hero-headline">
-    <span class="hl-white">CHEGA DE PAGAR</span><br>
-    <span class="hl-orange">PREÇO CHEIO.</span>
+    <span class="hl-white">O TICO ACHA.</span><br>
+    <span class="hl-orange">VOCÊ ECONOMIZA.</span>
   </h1>
   <p class="hero-sub">
-    Junte-se a milhares de brasileiros que economizam todo dia com as melhores promoções da internet — direto no WhatsApp, de graça.
+    Ele voa o dia inteiro de loja em loja atrás de preço. Quando acha algo que vale, mergulha e traz no bico — direto no seu WhatsApp, sem pagar nada.
   </p>
   <div class="ticker-wrap">
-    <span><span class="ticker-dot"></span>&#128308; GRUPO ABERTO AGORA — VAGAS LIMITADAS</span>
+    <span><span class="ticker-dot"></span>Ticou, avisou. Correu, levou.</span>
   </div>
 </header>
 
 <div class="cta-center">
-  <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
+  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
-    <span>Entrar no Grupo do <strong>WhatsApp — GRÁTIS</strong></span>
+    <span>Entrar no grupo do <strong>WhatsApp &middot; é grátis</strong></span>
   </a>
 </div>
 
 <div class="wrap reveal" style="margin-top:56px; text-align:center;">
-  <div class="section-tag">Números que falam por si</div>
+  <div class="section-tag">Sem enfeite</div>
   <div class="counters-row">
     <div class="counter-card"><div class="counter-num" data-target="47000">0</div><div class="counter-label">Membros</div></div>
-    <div class="counter-card"><div class="counter-num" data-target="120">0</div><div class="counter-label">Promos/dia</div></div>
+    <div class="counter-card"><div class="counter-num" data-target="120">0</div><div class="counter-label">Achados por dia</div></div>
     <div class="counter-card"><div class="counter-num" data-target="4.9" data-decimal="1">0</div><div class="counter-label">Avaliação &#11088;</div></div>
   </div>
 </div>
@@ -335,13 +344,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
     <div class="two-col-benefits">
-      <div class="section-tag">Por que entrar?</div>
-      <h2 class="section-title">TUDO QUE VOCÊ<br><span style="color:var(--orange)">RECEBE DE GRAÇA</span></h2>
+      <div class="section-tag">Por que entrar</div>
+      <h2 class="section-title">O QUE CAI NO<br><span style="color:var(--orange)">SEU WHATSAPP</span></h2>
       <ul class="benefits-list">
-        <li class="benefit-item"><span class="benefit-emoji">&#9889;</span><div class="benefit-text"><strong>Ofertas em tempo real</strong><span>Antes de todo mundo, antes de esgotar. Você nunca mais perde.</span></div></li>
-        <li class="benefit-item"><span class="benefit-emoji">&#128722;</span><div class="benefit-text"><strong>Todo tipo de produto</strong><span>Eletrônicos, moda, bebidas, eletrodomésticos, viagem e muito mais.</span></div></li>
-        <li class="benefit-item"><span class="benefit-emoji">&#128269;</span><div class="benefit-text"><strong>Curadoria real, sem spam</strong><span>Só entra o que é desconto de verdade. Zero enrolação, zero enganacão.</span></div></li>
-        <li class="benefit-item"><span class="benefit-emoji">&#128275;</span><div class="benefit-text"><strong>100% gratuito, pra sempre</strong><span>Sem mensalidade, sem plano pago, sem pegadinha. Entrou, tá dentro.</span></div></li>
+        <li class="benefit-item"><span class="benefit-emoji">&#9889;</span><div class="benefit-text"><strong>Achado na hora</strong><span>O Tico manda assim que encontra. Preço bom não espera.</span></div></li>
+        <li class="benefit-item"><span class="benefit-emoji">&#128722;</span><div class="benefit-text"><strong>De tudo um pouco</strong><span>Eletrônico, moda, bebida, eletrodoméstico, coisa de casa. Ele não escolhe nicho, escolhe preço.</span></div></li>
+        <li class="benefit-item"><span class="benefit-emoji">&#128269;</span><div class="benefit-text"><strong>Ele também reprova</strong><span>Quando o preço não vale, o Tico avisa: esse aqui ele deixa passar. É o que faz o resto valer.</span></div></li>
+        <li class="benefit-item"><span class="benefit-emoji">&#128275;</span><div class="benefit-text"><strong>Grátis, e continua</strong><span>Sem mensalidade, sem plano pago, sem pegadinha. Entrou, tá dentro.</span></div></li>
       </ul>
     </div>
   </div>
@@ -350,8 +359,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="divider"></div>
 
 <section class="wrap reveal">
-  <div class="section-tag">Já postamos isso</div>
-  <h2 class="section-title">OLHA ALGUMAS<br><span style="color:var(--orange)">OFERTAS REAIS</span></h2>
+  <div class="section-tag">Já ticado</div>
+  <h2 class="section-title">ALGUNS ACHADOS<br><span style="color:var(--orange)">DE VERDADE</span></h2>
   <div class="carousel-outer">
     <div class="carousel-track">
     <div class="offer-card">
@@ -529,10 +538,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="divider"></div>
 
 <section class="wrap reveal">
-  <div class="section-tag">Prints reais do grupo</div>
-  <h2 class="section-title">É ASSIM QUE<br><span style="color:var(--orange)">ACONTECE TODO DIA</span></h2>
+  <div class="section-tag">Prints do grupo</div>
+  <h2 class="section-title">É ASSIM QUE<br><span style="color:var(--orange)">FUNCIONA TODO DIA</span></h2>
   <p style="font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:28px;line-height:1.6;">
-    Sem filtro, sem montagem. Veja como o grupo funciona de verdade:
+    Sem montagem. É print do grupo mesmo:
   </p>
   <div class="screenshots-grid">
     <div class="screenshot-card">
@@ -557,8 +566,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="divider"></div>
 
 <section class="wrap reveal">
-  <div class="section-tag">Feedbacks dos membros</div>
-  <h2 class="section-title">QUEM ENTROU,<br><span style="color:var(--orange)">NÃO SAI MAIS</span></h2>
+  <div class="section-tag">Quem já está lá</div>
+  <h2 class="section-title">QUEM ENTROU,<br><span style="color:var(--orange)">FICOU.</span></h2>
   <div class="feedback-grid">
     <div class="feedback-bubble"><img src="imgs/feedback_1.jpg" alt="Feedback membro 1"></div>
     <div class="feedback-bubble"><img src="imgs/feedback_2.jpg" alt="Feedback membro 2"></div>
@@ -569,23 +578,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="divider"></div>
 
 <section class="bottom-cta reveal">
-  <div class="urgency-bar">&#128293; Não deixe passar mais nenhuma oferta!</div>
+  <div class="urgency-bar">O próximo achado sai daqui a pouco.</div>
   <h2 class="hero-headline" style="margin-bottom:28px;">
-    <span class="hl-white">ENTRE AGORA.</span><br>
+    <span class="hl-white">ENTRA NO GRUPO.</span><br>
     <span class="hl-orange">É DE GRAÇA.</span>
   </h2>
   <div style="display:flex;justify-content:center;">
-    <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
+    <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
       <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
-      <span>Quero Entrar no <strong>WhatsApp — GRÁTIS</strong></span>
+      <span>Quero entrar no <strong>WhatsApp &middot; é grátis</strong></span>
     </a>
   </div>
 </section>
 
-<footer><p>&copy; 2025 <strong>Promos do Davi</strong> &middot; Todos os direitos reservados</p></footer>
+<footer>
+  <p style="max-width:760px;margin:0 auto 14px;font-size:12px;line-height:1.7;opacity:.62">
+    Preço e estoque mudam a qualquer momento — confere no site da loja antes de fechar a compra.
+    Os links enviados no grupo são de afiliado: você paga o mesmo preço e o grupo recebe uma
+    comissão da loja. Como Associado Amazon, recebemos por compras qualificadas.
+  </p>
+  <p>&copy; 2026 <strong>Tica Promos</strong> &middot; Todos os direitos reservados</p>
+</footer>
 
 <div class="sticky-bar">
-  <a href="https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&amp;p=i&amp;ilr=4" class="btn-wpp">
+  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
     <span>Entrar no Grupo — <strong>GRÁTIS</strong></span>
   </a>
@@ -600,7 +616,7 @@ const pc = document.getElementById('particles');
 for(let i=0;i<30;i++){
   const p=document.createElement('div'), s=4+Math.random()*7;
   p.className='particle';
-  p.style.cssText='left:'+Math.round(Math.random()*100)+'%;width:'+s+'px;height:'+s+'px;--dur:'+(4+Math.random()*9)+'s;--delay:'+(Math.random()*12)+'s;background:'+(Math.random()>.5?'#ffa500':'#c63b00')+';';
+  p.style.cssText='left:'+Math.round(Math.random()*100)+'%;width:'+s+'px;height:'+s+'px;--dur:'+(4+Math.random()*9)+'s;--delay:'+(Math.random()*12)+'s;background:'+(Math.random()>.5?'#fa5150':'#d93636')+';';
   pc.appendChild(p);
 }
 
@@ -683,15 +699,27 @@ setInterval(function(){ goTo(current+1); }, 3500);
 
 <script>
 (function () {
-  // Convite direto do grupo. Este espelho nao passa pelo distribuidor do TSP,
-  // entao PADRAO e o proprio link do WhatsApp. Para variar o destino por
-  // campanha, basta cadastrar a chave em LINKS e chamar a pagina com ?g=chave.
-  var PADRAO = 'https://chat.whatsapp.com/FGylia9gw4pBNRSy53kfG0?s=cl&p=i&ilr=4';
-  var LINKS = {};
-  var SELETOR = 'a[href*="chat.whatsapp.com/"], a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
+  // Trocar esta linha para 'https://grupo.ticapromos.com.br/' quando o DNS do
+  // dominio novo estiver de pe. O proxy ja aceita os dois hosts.
+  var BASE = 'https://grupo.tudosobrepromos.com/';
+  var LINKS = {
+    wpp:    BASE + 'groups',
+    grupos: BASE + 'wpp'
+  };
+  var PADRAO = BASE + 'geral';
+  var SELETOR = 'a[href*="grupo.tudosobrepromos.com/"], a[href*="grupo.ticapromos.com.br/"], a[href*="busqy.me/grupos/"]';
 
-  var chave = (new URLSearchParams(location.search).get('g') || '').toLowerCase();
+  var params = new URLSearchParams(location.search);
+  var chave  = (params.get('g') || '').toLowerCase();
   var destino = LINKS[chave] || PADRAO;
+
+  // Atribuicao de origem. O distribuidor conta o clique por ?o= e guarda em
+  // origens{} no grupos-links.json — sem isso todo trafego cai em "direto" e
+  // nao da para saber qual canal trouxe o membro. Prioridade: ?o= explicito na
+  // URL, senao utm_source (anuncio), senao 'landing'.
+  var origem = (params.get('o') || params.get('utm_source') || 'landing')
+                 .toLowerCase().slice(0, 40).replace(/[^\w.\-]/g, '') || 'landing';
+  destino += (destino.indexOf('?') === -1 ? '?' : '&') + 'o=' + encodeURIComponent(origem);
 
   function aplicar() {
     var links = document.querySelectorAll(SELETOR);
