@@ -299,7 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 <div class="cta-center">
-  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+  <a href="https://ir.ticapromos.com.br/geral" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
     <span>Entrar no grupo do <strong>WhatsApp &middot; é grátis</strong></span>
   </a>
@@ -584,7 +584,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="hl-orange">É DE GRAÇA.</span>
   </h2>
   <div style="display:flex;justify-content:center;">
-    <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+    <a href="https://ir.ticapromos.com.br/geral" class="btn-wpp">
       <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
       <span>Quero entrar no <strong>WhatsApp &middot; é grátis</strong></span>
     </a>
@@ -601,7 +601,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <div class="sticky-bar">
-  <a href="https://grupo.tudosobrepromos.com/geral" class="btn-wpp">
+  <a href="https://ir.ticapromos.com.br/geral" class="btn-wpp">
     <img src="imgs/whatsapp.png" alt="WhatsApp" style="width:28px;height:28px;object-fit:contain;flex-shrink:0;">
     <span>Entrar no Grupo — <strong>GRÁTIS</strong></span>
   </a>
@@ -699,15 +699,17 @@ setInterval(function(){ goTo(current+1); }, 3500);
 
 <script>
 (function () {
-  // Trocar esta linha para 'https://grupo.ticapromos.com.br/' quando o DNS do
-  // dominio novo estiver de pe. O proxy ja aceita os dois hosts.
-  var BASE = 'https://grupo.tudosobrepromos.com/';
+  // Distribuidor no dominio proprio. E 'ir' e nao 'grupo' de proposito: a
+  // landing mora em grupos.ticapromos.com.br e uma letra de diferenca entre os
+  // dois hosts era convite a colar o link errado no anuncio.
+  var BASE = 'https://ir.ticapromos.com.br/';
   var LINKS = {
     wpp:    BASE + 'groups',
     grupos: BASE + 'wpp'
   };
   var PADRAO = BASE + 'geral';
-  var SELETOR = 'a[href*="grupo.tudosobrepromos.com/"], a[href*="grupo.ticapromos.com.br/"], a[href*="busqy.me/grupos/"]';
+  var SELETOR = 'a[href*="ir.ticapromos.com.br/"], a[href*="grupo.ticapromos.com.br/"], '
+             + 'a[href*="grupo.tudosobrepromos.com/"], a[href*="busqy.me/grupos/"]';
 
   var params = new URLSearchParams(location.search);
   var chave  = (params.get('g') || '').toLowerCase();
