@@ -52,3 +52,19 @@ navy `#12141C`, não preto puro.
 
 Voz: segunda pessoa do singular, frases curtas, sem urgência falsa. A bíblia
 do personagem está em `davileles/dados`.
+
+## Landings de nicho
+
+Cada nicho tem a própria landing numa subpasta, reaproveitando `favicon.ico`,
+`apple-touch-icon.png` e `imgs/whatsapp.png` da raiz via `../`.
+
+| Pasta | Slug do distribuidor | Origem padrão |
+|---|---|---|
+| `bebidas/` | `ir.ticapromos.com.br/bebidas` | `landing-bebidas` |
+
+Publicar = subir a subpasta inteira para `public_html/<nicho>/` na Hostinger.
+O `?o=` / `utm_source` funciona igual à landing geral. A landing de bebidas pede
+confirmação de 18+ no primeiro clique do CTA (guardada na sessão) e empurra o
+evento `entrar_grupo` com `nicho` e `local` no `dataLayer`.
+Os achados da página (`ACHADOS` no script) são reais, tirados do histórico de
+envios da categoria bebidas — atualizar à mão quando envelhecerem.

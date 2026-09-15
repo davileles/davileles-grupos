@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google Tag Manager — mesmo contêiner da landing geral -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tica Promos Bebidas — a mesma garrafa, bem mais barata</title>
+<meta name="description" content="Whisky, gin, vodka, cerveja e energético com preço que despencou. O Tico avisa no seu WhatsApp, num grupo só de bebida. Grátis.">
+<meta name="theme-color" content="#12141c">
+<meta property="og:title" content="Tica Promos Bebidas">
+<meta property="og:description" content="A mesma garrafa, bem mais barata. Grupo de WhatsApp só de bebida, grátis.">
+<meta property="og:image" content="https://grupos.ticapromos.com.br/bebidas/imgs/og-bebidas.jpg">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://grupos.ticapromos.com.br/bebidas/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Paleta do Tico, sem quarta cor de marca. O verde é só do botão de
+   WhatsApp, igual à landing geral — é o sinal que a pessoa reconhece.
+   A peça de assinatura desta página é a etiqueta de preço do topo; o resto
+   fica quieto de propósito. */
+:root{
+  --bg:#12141c; --surface:#1a1d28; --surface-2:#232838; --linha:#2e3348;
+  --coral:#fa5150; --vermelho:#d93636; --ardosia:#767d93; --cinza:#d4d7e2;
+  --texto:#f5f6fa; --suave:#a3a9bb;
+  --wpp:#25d366; --wpp-2:#128c7e;
+  --max:1080px; --pad:clamp(18px,4vw,40px);
+  --titulo:'Bebas Neue',Impact,sans-serif; --corpo:'Nunito',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font-family:var(--corpo);font-weight:500;
+  line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:84px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:64px 0}
+h2{font-family:var(--titulo);font-weight:400;font-size:clamp(38px,5.4vw,60px);line-height:.95;
+  letter-spacing:.5px;margin-bottom:18px}
+.intro{color:var(--suave);font-size:16px;max-width:56ch;margin-bottom:30px}
+
+/* ── Topo ─────────────────────────────────────────────────────────── */
+.topo{display:flex;align-items:center;gap:12px;padding:18px 0 0}
+.topo img{width:48px;height:48px;border-radius:12px;background:#fff}
+.topo b{display:block;font-weight:900;font-size:15px;letter-spacing:-.2px}
+.topo span{font-size:12px;color:var(--suave)}
+
+/* ── Hero ─────────────────────────────────────────────────────────── */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:40px 0 56px}
+.hero h1{font-family:var(--titulo);font-weight:400;font-size:clamp(58px,7.4vw,100px);
+  line-height:.88;letter-spacing:1px}
+.hero h1 .baixo{display:block;color:var(--coral)}
+.hero p{font-size:clamp(16px,1.7vw,19px);color:var(--suave);margin:20px 0 28px;max-width:44ch}
+.hero p strong{color:var(--texto)}
+.garantias{list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:13px;color:var(--suave)}
+.garantias li::before{content:"✓";color:var(--wpp);font-weight:900;margin-right:6px}
+
+.btn-wpp{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:420px;
+  padding:18px 28px;border-radius:16px;background:linear-gradient(135deg,var(--wpp),var(--wpp-2));
+  color:#fff;text-decoration:none;font-weight:900;font-size:17px;
+  box-shadow:0 10px 32px rgba(37,211,102,.32);transition:transform .15s,box-shadow .15s}
+.btn-wpp:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,.45)}
+.btn-wpp:active{transform:scale(.98)}
+.btn-wpp img{width:26px;height:26px}
+
+/* Etiqueta de gôndola: é aqui que a página gasta a ousadia. */
+.gondola{justify-self:center;width:min(400px,100%)}
+.etq-wrap{position:relative}
+.etiqueta{position:relative;background:#fff;color:#2e3348;border-radius:18px;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.55);transform:rotate(-2deg)}
+.etiqueta::before{content:"";position:absolute;top:16px;left:50%;width:14px;height:14px;margin-left:-7px;
+  border-radius:50%;background:var(--bg);box-shadow:inset 0 2px 3px rgba(0,0,0,.4);z-index:2}
+.etq-faixa{background:var(--vermelho);color:#fff;padding:40px 22px 12px;display:flex;justify-content:space-between;
+  align-items:baseline;font-weight:800;font-size:13px}
+.etq-faixa b{font-family:var(--titulo);font-weight:400;font-size:30px;letter-spacing:.5px;line-height:1}
+.etq-corpo{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:18px 22px 20px;align-items:center}
+.etq-foto{width:120px;height:150px;object-fit:contain}
+.etq-nome{font-weight:800;font-size:15px;line-height:1.3;min-height:40px}
+.etq-de{display:inline-block;margin-top:10px;font-size:15px;font-weight:700;color:#767d93}
+.etq-de .riscado{position:relative;display:inline-block}
+.etq-de svg{position:absolute;left:-4px;top:50%;width:calc(100% + 8px);height:14px;margin-top:-7px;overflow:visible}
+.etq-de path{stroke:var(--vermelho);stroke-width:3;fill:none;stroke-linecap:round;
+  stroke-dasharray:120;stroke-dashoffset:120}
+.etiqueta.pronta .etq-de path{animation:risca .45s .15s ease-out forwards}
+@keyframes risca{to{stroke-dashoffset:0}}
+.etq-por{font-family:var(--titulo);font-size:54px;line-height:.95;color:#2e3348;letter-spacing:.5px}
+.etq-por small{font-size:26px;vertical-align:top;margin-right:3px}
+.etq-rodape{border-top:2px dashed #d4d7e2;padding:12px 22px 14px;font-size:12px;color:#616880;
+  display:flex;justify-content:space-between;gap:10px}
+.sobra{position:absolute;right:-12px;bottom:-22px;background:var(--coral);color:#fff;border-radius:999px;
+  padding:12px 18px;font-weight:900;font-size:15px;transform:rotate(4deg);
+  box-shadow:0 10px 24px rgba(250,81,80,.35);z-index:3;white-space:nowrap}
+.etiqueta,.sobra{transition:opacity .25s}
+.trocando .etiqueta,.trocando .sobra{opacity:0}
+.gondola-nav{display:flex;justify-content:center;gap:8px;margin-top:44px}
+.gondola-nav button{width:10px;height:10px;border-radius:50%;border:none;background:var(--linha);cursor:pointer;padding:0}
+.gondola-nav button[aria-current="true"]{background:var(--coral)}
+.gondola-nota{text-align:center;font-size:12px;color:var(--ardosia);margin-top:12px}
+
+/* ── Dores ────────────────────────────────────────────────────────── */
+.dores{background:var(--surface);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.dores-lista{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.dores-lista li{padding:20px 0;border-bottom:1px solid var(--linha)}
+.dores-lista strong{display:block;font-size:18px;font-weight:900;margin-bottom:4px}
+.dores-lista span{color:var(--suave);font-size:15px}
+.virada{margin-top:34px;font-size:clamp(18px,2.2vw,22px);font-weight:800;max-width:52ch}
+.virada em{font-style:normal;color:var(--coral)}
+
+/* ── Achados reais ────────────────────────────────────────────────── */
+.prateleira{display:grid;grid-auto-flow:column;grid-auto-columns:196px;gap:14px;
+  overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:thin;
+  scrollbar-color:var(--linha) transparent}
+.achado{scroll-snap-align:start;background:var(--surface);border:1px solid var(--linha);border-radius:14px;overflow:hidden;
+  display:flex;flex-direction:column}
+.achado img{background:#fff;aspect-ratio:1;object-fit:contain;width:100%}
+.achado div{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.achado h3{font-size:13.5px;font-weight:800;line-height:1.3}
+.achado s{font-size:12px;color:var(--ardosia);margin-top:auto}
+.achado b{font-size:21px;font-weight:900;color:var(--coral);letter-spacing:-.4px;line-height:1.1}
+.achado small{font-size:11.5px;color:var(--suave)}
+.achado .pct{align-self:flex-start;background:var(--vermelho);color:#fff;font-size:11px;font-weight:900;
+  padding:3px 8px;border-radius:6px;margin-bottom:4px}
+.aviso-preco{font-size:12.5px;color:var(--ardosia);margin-top:6px}
+
+/* ── Calculadora ──────────────────────────────────────────────────── */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.calc-caixa{background:var(--surface);border:1px solid var(--linha);border-radius:20px;padding:28px}
+.calc-caixa label{display:block;font-weight:800;font-size:15px;margin-bottom:6px}
+.calc-gasto{font-family:var(--titulo);font-size:46px;line-height:1;margin-bottom:14px}
+input[type=range]{width:100%;accent-color:var(--coral);height:28px;cursor:pointer}
+.calc-escala{display:flex;justify-content:space-between;font-size:12px;color:var(--ardosia)}
+.calc-res{margin-top:22px;padding-top:20px;border-top:1px dashed var(--linha)}
+.calc-res p{font-size:15px;color:var(--suave)}
+.calc-res strong{display:block;font-family:var(--titulo);font-weight:400;font-size:64px;line-height:.95;color:var(--coral);margin:4px 0}
+.calc-res .ano{color:var(--texto);font-weight:800}
+.calc-nota{font-size:12px;color:var(--ardosia);margin-top:14px}
+
+/* ── Por que só bebida ────────────────────────────────────────────── */
+.motivos{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:10px}
+.motivo b{display:block;font-size:19px;font-weight:900;margin:10px 0 6px}
+.motivo p{color:var(--suave);font-size:15px}
+.motivo i{font-style:normal;font-size:30px}
+
+.ocasioes{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.ocasioes span{border:1px solid var(--linha);border-radius:999px;padding:9px 16px;font-size:14px;font-weight:700;color:var(--cinza)}
+
+/* ── Print ────────────────────────────────────────────────────────── */
+.print{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
+.print figure{border-radius:24px;overflow:hidden;border:6px solid #232838;box-shadow:0 24px 60px rgba(0,0,0,.5);max-width:300px}
+.print blockquote{font-size:clamp(20px,2.4vw,26px);font-weight:800;line-height:1.35;max-width:32ch}
+.print cite{display:block;margin-top:14px;font-style:normal;font-size:14px;color:var(--suave);font-weight:600}
+
+/* ── Perguntas ────────────────────────────────────────────────────── */
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 36px 20px 0;font-weight:800;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:24px;color:var(--coral);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{color:var(--suave);padding:0 0 20px;font-size:15.5px;max-width:62ch}
+
+/* ── Fecho ────────────────────────────────────────────────────────── */
+.fecho{text-align:center;padding:72px 0 56px}
+.fecho img.tico{width:120px;height:120px;border-radius:26px;background:#fff;margin:0 auto 22px}
+.fecho h2{font-size:clamp(46px,7vw,86px)}
+.fecho p{color:var(--suave);margin:0 auto 26px;max-width:46ch}
+footer{border-top:1px solid var(--linha);padding:28px 0 36px;text-align:center}
+footer .moderacao{font-weight:900;font-size:14px;letter-spacing:.3px;margin-bottom:10px}
+footer p{font-size:12px;color:var(--ardosia);max-width:70ch;margin:0 auto;line-height:1.7}
+
+.fixo{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(18,20,28,.94);backdrop-filter:blur(12px);
+  border-top:1px solid var(--linha);padding:10px 16px;display:flex;justify-content:center;
+  transform:translateY(110%);transition:transform .25s}
+.fixo.visivel{transform:none}
+.fixo .btn-wpp{padding:13px 22px;font-size:15px;max-width:400px}
+
+/* ── Confirmação de idade ─────────────────────────────────────────── */
+.idade{position:fixed;inset:0;z-index:60;background:rgba(8,9,14,.82);display:none;align-items:center;justify-content:center;padding:20px}
+.idade.aberta{display:flex}
+.idade-caixa{background:var(--surface);border:1px solid var(--linha);border-radius:20px;padding:30px 26px 24px;max-width:380px;width:100%;text-align:center}
+.idade-caixa img{width:84px;height:84px;border-radius:18px;background:#fff;margin:0 auto 14px}
+.idade-caixa h3{font-size:21px;font-weight:900;margin-bottom:8px}
+.idade-caixa p{color:var(--suave);font-size:14.5px;margin-bottom:22px}
+.idade-caixa .btn-wpp{max-width:none}
+.idade-nao{display:block;margin:14px auto 0;background:none;border:none;color:var(--suave);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:40px;padding-top:28px}
+  .gondola{order:2}
+  .dores-lista{grid-template-columns:1fr}
+  .calc{grid-template-columns:1fr;gap:24px}
+  .motivos{grid-template-columns:1fr;gap:24px}
+  .print{grid-template-columns:1fr;gap:28px}
+  .print figure{margin:0 auto;max-width:260px}
+  .prateleira{grid-auto-columns:164px;margin-right:calc(var(--pad) * -1)}
+  section{padding:52px 0}
+}
+@media (max-width:420px){
+  .etq-corpo{grid-template-columns:96px 1fr;gap:12px}
+  .etq-foto{width:96px;height:124px}
+  .etq-por{font-size:46px}
+  .sobra{right:-4px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .etq-de path{stroke-dashoffset:0}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSXGHM5P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="wrap">
+  <header class="topo">
+    <img src="imgs/tico-bebidas.png" alt="Tico, mascote do Tica Promos, segurando uma garrafa" width="48" height="48">
+    <div><b>Tica Promos Bebidas</b><span>Grupo de WhatsApp só de bebida</span></div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>A mesma garrafa.<span class="baixo">Bem mais barata.</span></h1>
+      <p>O preço de whisky, gin e vodka sobe e desce toda semana nas lojas grandes. O Tico fica de olho e, <strong>quando despenca, avisa no seu WhatsApp</strong>, num grupo que só fala de bebida.</p>
+      <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/bebidas" data-local="hero">
+        <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+        <span>Entrar no grupo de bebidas</span>
+      </a>
+      <ul class="garantias">
+        <li>Grátis</li><li>Só bebida</li><li>Sai quando quiser</li>
+      </ul>
+    </div>
+
+    <div class="gondola" id="gondola" aria-live="polite">
+      <div class="etq-wrap">
+      <div class="etiqueta" id="etiqueta">
+        <div class="etq-faixa"><span>Ticado em <span id="etq-data">—</span></span><b id="etq-pct">—</b></div>
+        <div class="etq-corpo">
+          <img class="etq-foto" id="etq-foto" src="imgs/B00861CC7Y.jpg" alt="" width="120" height="150">
+          <div>
+            <div class="etq-nome" id="etq-nome">—</div>
+            <span class="etq-de">de <span class="riscado"><span id="etq-de">—</span><svg viewBox="0 0 100 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 10 C 30 4, 60 12, 98 3"/></svg></span></span>
+            <div class="etq-por" id="etq-por">—</div>
+          </div>
+        </div>
+        <div class="etq-rodape"><span><span id="etq-loja">—</span>, preço do dia do aviso</span></div>
+      </div>
+      <div class="sobra" id="etq-sobra">—</div>
+      </div>
+      <div class="gondola-nav" id="gondola-nav" aria-label="Trocar garrafa"></div>
+      <p class="gondola-nota">Achados reais que saíram no grupo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- DORES -->
+<section class="dores">
+  <div class="wrap">
+    <h2>Já aconteceu com você?</h2>
+    <ul class="dores-lista">
+      <li><strong>Pagou caro na correria</strong><span>Churrasco no sábado, passou na adega na sexta e levou pelo preço cheio. De novo.</span></li>
+      <li><strong>Viu a promoção depois que acabou</strong><span>Alguém mandou o print do Black Label barato. Quando você abriu o link, já tinha voltado ao normal.</span></li>
+      <li><strong>Caiu no "de/por" inflado</strong><span>O "de" subiu uma semana antes só para o "por" parecer desconto.</span></li>
+      <li><strong>Grupo de promoção que é bagunça</strong><span>Para achar uma garrafa, você passa por fralda, air fryer e capinha de celular.</span></li>
+    </ul>
+    <p class="virada">Bebida é das coisas que mais variam de preço, e ninguém fica olhando loja todo dia. <em>O Tico fica.</em></p>
+  </div>
+</section>
+
+<!-- ACHADOS -->
+<section>
+  <div class="wrap">
+    <h2>O que o Tico já ticou</h2>
+    <p class="intro">Algumas garrafas que saíram no grupo em setembro, com o preço do dia do aviso.</p>
+    <div class="prateleira" id="prateleira" tabindex="0" aria-label="Achados de bebida enviados no grupo"></div>
+    <p class="aviso-preco">Preço e estoque mudam rápido. Por isso o aviso chega na hora, e não depois.</p>
+  </div>
+</section>
+
+<!-- CALCULADORA -->
+<section class="dores">
+  <div class="wrap calc">
+    <div>
+      <h2>Quanto fica no seu bolso?</h2>
+      <p class="intro">Nos achados de bebida que o grupo mandou em setembro, o desconto médio foi de <strong id="calc-media-txt">32%</strong>. Arraste para ver o que isso significa no que você já gasta.</p>
+    </div>
+    <div class="calc-caixa">
+      <label for="gasto">Você gasta por mês com bebida</label>
+      <div class="calc-gasto" id="calc-gasto">R$ 200</div>
+      <input type="range" id="gasto" min="50" max="1000" step="10" value="200">
+      <div class="calc-escala"><span>R$ 50</span><span>R$ 1.000</span></div>
+      <div class="calc-res">
+        <p>Comprando no achado, sobraria</p>
+        <strong id="calc-mes">R$ 64</strong>
+        <p>por mês. <span class="ano" id="calc-ano">R$ 768 no ano.</span></p>
+      </div>
+      <p class="calc-nota">Estimativa com o desconto médio. Nem toda garrafa entra em promoção todo mês.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE SÓ BEBIDA -->
+<section>
+  <div class="wrap">
+    <h2>Por que um grupo só de bebida</h2>
+    <div class="motivos">
+      <div class="motivo"><i aria-hidden="true">🥃</i><b>Sem ruído</b><p>Só cai whisky, gin, vodka, licor, cerveja, energético e café. Você não precisa garimpar no meio de outra coisa.</p></div>
+      <div class="motivo"><i aria-hidden="true">📉</i><b>Desconto conferido</b><p>O Tico compara com o histórico de preço antes de avisar. Quando o "de" não se sustenta, ele deixa passar.</p></div>
+      <div class="motivo"><i aria-hidden="true">📦</i><b>Loja grande</b><p>Links diretos para Amazon, Mercado Livre e Shopee. Nada de perfil desconhecido que pede Pix.</p></div>
+    </div>
+    <div class="ocasioes" aria-label="Para quando serve">
+      <span>🔥 Churrasco do fim de semana</span>
+      <span>🎁 Presente que parece caro</span>
+      <span>🎄 Estoque para as festas de fim de ano</span>
+      <span>🥂 Aniversário e confraternização</span>
+      <span>✨ Aquela garrafa que você sempre quis provar</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRINT -->
+<section class="dores">
+  <div class="wrap print">
+    <figure><img src="../imgs/img_9403.jpg" alt="Print do grupo com oferta de Gin Tanqueray Sevilla" width="300"></figure>
+    <div>
+      <h2>Chega assim no seu WhatsApp</h2>
+      <blockquote>Gin Tanqueray Sevilla de R$ 124,90 por R$ 42,45. Foto, preço e link, sem enrolação.<cite>Print de um aviso que saiu nos grupos do Tica Promos.</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <h2>Perguntas rápidas</h2>
+    <div class="faq">
+      <details><summary>É grátis mesmo?</summary><p>É. Os links são de afiliado: você paga o mesmo preço da loja e o grupo recebe uma comissão dela. Não existe plano pago.</p></details>
+      <details><summary>Vai lotar meu WhatsApp?</summary><p>Saem alguns avisos por dia, só de bebida. Se preferir, silencia o grupo e abre quando for comprar: os achados ficam lá.</p></details>
+      <details><summary>E se eu quiser sair?</summary><p>É só sair do grupo, como qualquer outro. Sem cadastro e sem nada para cancelar.</p></details>
+      <details><summary>Menor de 18 pode entrar?</summary><p>Não. O grupo divulga bebida alcoólica, então é só para maiores de 18 anos.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FECHO -->
+<section class="fecho">
+  <div class="wrap">
+    <img class="tico" src="imgs/tico-bebidas.png" alt="" width="120" height="120" loading="lazy">
+    <h2>A próxima garrafa<br>já está no radar.</h2>
+    <p>Entra agora e recebe o próximo achado junto com todo mundo, não no print atrasado.</p>
+    <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/bebidas" data-local="fecho">
+      <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+      <span>Entrar no grupo de bebidas</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="moderacao">Beba com moderação. Venda proibida para menores de 18 anos.</p>
+    <p>Preço e estoque mudam a qualquer momento: confira no site da loja antes de fechar a compra. Os links enviados no grupo são de afiliado. Como Associado Amazon, recebemos por compras qualificadas. Se for dirigir, não beba.</p>
+    <p style="margin-top:12px">© 2026 Tica Promos</p>
+  </div>
+</footer>
+
+<div class="fixo" id="fixo">
+  <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/bebidas" data-local="fixo">
+    <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+    <span>Entrar no grupo, é grátis</span>
+  </a>
+</div>
+
+<div class="idade" id="idade" role="dialog" aria-modal="true" aria-labelledby="idade-titulo">
+  <div class="idade-caixa">
+    <img src="imgs/tico-bebidas.png" alt="" width="84" height="84">
+    <h3 id="idade-titulo">Você tem 18 anos ou mais?</h3>
+    <p>O grupo divulga ofertas de bebida alcoólica.</p>
+    <a class="btn-wpp" id="idade-sim" href="https://ir.ticapromos.com.br/bebidas">
+      <img src="../imgs/whatsapp.png" alt="" width="26" height="26"><span>Sim, entrar no grupo</span>
+    </a>
+    <button class="idade-nao" id="idade-nao" type="button">Não tenho 18 anos</button>
+  </div>
+</div>
+
+<script>
+'use strict';
+// Achados reais do histórico de envios (categoria bebidas), set/2026. Preços
+// da data do aviso; o desconto e a sobra são calculados aqui, nunca digitados.
+var ACHADOS = [
+  { foto:'B00861CC7Y', nome:'Johnnie Walker Black Label 12 anos 750ml', de:177.90, por:99.90,  loja:'Amazon', data:'04/09' },
+  { foto:'B07FPW95CM', nome:'Jameson Whiskey Irlandês 750ml',            de:130.00, por:69.08,  loja:'Amazon', data:'14/09' },
+  { foto:'B0929RQXRN', nome:'Macallan Double Cask 15 anos 700ml',        de:1999.90,por:1299.90,loja:'Amazon', data:'02/09' },
+  { foto:'B0FC8SKB2F', nome:'Gin Tanqueray London Dry 375ml',            de:73.90,  por:39.90,  loja:'Amazon', data:'04/09' },
+  { foto:'B003WIG5J2', nome:'Absolut Citron 750ml',                      de:117.90, por:68.90,  loja:'Amazon', data:'15/09' },
+  { foto:'B07XS8JM94', nome:'Vodka Skyy 980ml',                          de:46.90,  por:27.39,  loja:'Amazon', data:'14/09' },
+  { foto:'B001QZ5GUW', nome:"Buchanan's Deluxe 750ml",                   de:189.90, por:119.90, loja:'Amazon', data:'04/09' },
+  { foto:'B006ILMIGE', nome:'Vodka Grey Goose 750ml',                    de:174.90, por:122.47, loja:'Amazon', data:'14/09' },
+  { foto:'B008V6PVBS', nome:'Licor Amarula Cream 750ml',                 de:141.84, por:99.99,  loja:'Amazon', data:'14/09' },
+  { foto:'B004HOEU4M', nome:'Red Bull 250ml, 4 latas',                   de:41.96,  por:31.16,  loja:'Amazon', data:'15/09' },
+  { foto:'B07BB8NL42', nome:'Heineken Barril 5L',                        de:119.99, por:97.91,  loja:'Amazon', data:'14/09' }
+];
+var NA_ETIQUETA = 5;        // os cinco primeiros giram no topo
+var DESCONTO_MEDIO = 0.32;  // média dos achados de bebida em set/2026
+
+var $ = function (id) { return document.getElementById(id); };
+function brl(v, casas) {
+  casas = casas == null ? 2 : casas;
+  return 'R$ ' + v.toFixed(casas).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+function pct(a) { return Math.round((1 - a.por / a.de) * 100); }
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+// ── Etiqueta do topo ────────────────────────────────────────────────────
+var atual = 0, timer = null;
+var reduz = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function mostrar(i) {
+  var a = ACHADOS[i], g = $('gondola'), e = $('etiqueta');
+  atual = i;
+  g.classList.add('trocando');
+  setTimeout(function () {
+    e.classList.remove('pronta');
+    $('etq-foto').src = 'imgs/' + a.foto + '.jpg';
+    $('etq-foto').alt = a.nome;
+    $('etq-nome').textContent = a.nome;
+    $('etq-de').textContent = brl(a.de);
+    var p = a.por.toFixed(2).split('.');
+    $('etq-por').innerHTML = '<small>R$</small>' + Number(p[0]).toLocaleString('pt-BR') + ',' + p[1];
+    $('etq-pct').textContent = '-' + pct(a) + '%';
+    $('etq-data').textContent = a.data;
+    $('etq-loja').textContent = a.loja;
+    $('etq-sobra').textContent = 'Sobrou ' + brl(a.de - a.por, (a.de - a.por) % 1 ? 2 : 0);
+    var bts = $('gondola-nav').children;
+    for (var k = 0; k < bts.length; k++) bts[k].setAttribute('aria-current', String(k === i));
+    void e.offsetWidth;
+    e.classList.add('pronta');
+    g.classList.remove('trocando');
+  }, reduz ? 0 : 250);
+}
+function agendar() {
+  clearInterval(timer);
+  if (!reduz) timer = setInterval(function () { mostrar((atual + 1) % NA_ETIQUETA); }, 4200);
+}
+(function () {
+  var nav = $('gondola-nav'), html = '';
+  for (var i = 0; i < NA_ETIQUETA; i++) html += '<button type="button" aria-label="Ver ' + esc(ACHADOS[i].nome) + '"></button>';
+  nav.innerHTML = html;
+  nav.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button'); if (!b) return;
+    mostrar(Array.prototype.indexOf.call(nav.children, b)); agendar();
+  });
+  $('etiqueta').addEventListener('click', function () { mostrar((atual + 1) % NA_ETIQUETA); agendar(); });
+  mostrar(0); agendar();
+  document.addEventListener('visibilitychange', function () { if (document.hidden) clearInterval(timer); else agendar(); });
+})();
+
+// ── Prateleira ──────────────────────────────────────────────────────────
+$('prateleira').innerHTML = ACHADOS.map(function (a) {
+  return '<article class="achado">' +
+    '<img src="imgs/' + a.foto + '.jpg" alt="" loading="lazy" width="480" height="480">' +
+    '<div><span class="pct">-' + pct(a) + '%</span>' +
+    '<h3>' + esc(a.nome) + '</h3>' +
+    '<s>' + brl(a.de) + '</s><b>' + brl(a.por) + '</b>' +
+    '<small>' + esc(a.loja) + ', ' + a.data + '</small></div></article>';
+}).join('');
+
+// ── Calculadora ─────────────────────────────────────────────────────────
+function calcular() {
+  var g = Number($('gasto').value);
+  var mes = Math.round(g * DESCONTO_MEDIO);
+  $('calc-gasto').textContent = brl(g, 0);
+  $('calc-mes').textContent = brl(mes, 0);
+  $('calc-ano').textContent = brl(mes * 12, 0) + ' no ano.';
+}
+$('calc-media-txt').textContent = Math.round(DESCONTO_MEDIO * 100) + '%';
+$('gasto').addEventListener('input', calcular);
+calcular();
+
+// ── Barra fixa: aparece depois que o botão do topo sai da tela ─────────
+(function () {
+  var alvo = document.querySelector('.hero .btn-wpp');
+  if (!('IntersectionObserver' in window) || !alvo) { $('fixo').classList.add('visivel'); return; }
+  new IntersectionObserver(function (es) {
+    $('fixo').classList.toggle('visivel', !es[0].isIntersecting);
+  }).observe(alvo);
+})();
+
+// ── Destino, origem e confirmação de idade ─────────────────────────────
+// Mesmo padrão da landing geral: todo CTA passa pelo distribuidor do proxy
+// (slug "bebidas"), com ?o= para atribuir o canal em grupos-links.json.
+(function () {
+  var DESTINO = 'https://ir.ticapromos.com.br/bebidas';
+  var params = new URLSearchParams(location.search);
+  var origem = (params.get('o') || params.get('utm_source') || 'landing-bebidas')
+                 .toLowerCase().slice(0, 40).replace(/[^\w.\-]/g, '') || 'landing-bebidas';
+  var destino = DESTINO + '?o=' + encodeURIComponent(origem);
+  var links = document.querySelectorAll('a.cta, #idade-sim');
+  for (var i = 0; i < links.length; i++) links[i].href = destino;
+
+  var confirmou = false;
+  try { confirmou = sessionStorage.getItem('tsp-18') === '1'; } catch (e) { /* navegação privada */ }
+  var ultimoLocal = 'desconhecido', ultimoFoco = null;
+
+  function registrar(local) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'entrar_grupo', nicho: 'bebidas', local: local, origem: origem });
+  }
+  function fechar() { $('idade').classList.remove('aberta'); if (ultimoFoco) ultimoFoco.focus(); }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.cta');
+    if (!a) return;
+    ultimoLocal = a.getAttribute('data-local') || 'desconhecido';
+    if (confirmou) { registrar(ultimoLocal); return; }
+    e.preventDefault();
+    ultimoFoco = a;
+    $('idade').classList.add('aberta');
+    $('idade-sim').focus();
+  });
+  // O "sim" é um link de verdade: o navegador abre o WhatsApp sem tratar como popup.
+  $('idade-sim').addEventListener('click', function () {
+    confirmou = true;
+    try { sessionStorage.setItem('tsp-18', '1'); } catch (e) { /* navegação privada */ }
+    registrar(ultimoLocal);
+  });
+  $('idade-nao').addEventListener('click', function () {
+    $('idade').querySelector('h3').textContent = 'Então esse grupo não é para você';
+    $('idade').querySelector('p').textContent = 'Ele divulga bebida alcoólica e é só para maiores de 18 anos.';
+    $('idade-sim').style.display = 'none';
+    $('idade-nao').textContent = 'Fechar';
+    $('idade-nao').onclick = fechar;
+  });
+  $('idade').addEventListener('click', function (e) { if (e.target === $('idade')) fechar(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+})();
+</script>
+</body>
+</html>
