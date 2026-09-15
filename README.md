@@ -61,6 +61,7 @@ Cada nicho tem a própria landing numa subpasta, reaproveitando `favicon.ico`,
 | Pasta | Slug do distribuidor | Origem padrão |
 |---|---|---|
 | `bebidas/` | `ir.ticapromos.com.br/bebidas` | `landing-bebidas` |
+| `babykids/` | `ir.ticapromos.com.br/babykids` | `landing-babykids` |
 
 Publicar = subir a subpasta inteira para `public_html/<nicho>/` na Hostinger.
 O `?o=` / `utm_source` funciona igual à landing geral. A landing de bebidas pede
@@ -68,3 +69,7 @@ confirmação de 18+ no primeiro clique do CTA (guardada na sessão) e empurra o
 evento `entrar_grupo` com `nicho` e `local` no `dataLayer`.
 Os achados da página (`ACHADOS` no script) são reais, tirados do histórico de
 envios da categoria bebidas — atualizar à mão quando envelhecerem.
+
+A landing Baby e Kids não pede confirmação de idade. Os preços típicos dela são a
+mediana do preço de vitrine em `dados/tsp/precos_hist_AAAA-MM.json`; a faixa de
+data comemorativa (Dia das Crianças até 12/10, depois Natal) é calculada no dia.
