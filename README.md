@@ -73,3 +73,24 @@ envios da categoria bebidas — atualizar à mão quando envelhecerem.
 A landing Baby e Kids não pede confirmação de idade. Os preços típicos dela são a
 mediana do preço de vitrine em `dados/tsp/precos_hist_AAAA-MM.json`; a faixa de
 data comemorativa (Dia das Crianças até 12/10, depois Natal) é calculada no dia.
+
+## Agregador de links (`links/`)
+
+Página única com um botão por grupo, para stories e link da bio. Cada botão vai
+para o distribuidor (`ir.ticapromos.com.br/<slug>`), nunca para convite fixo.
+
+| Botão | Slug |
+|---|---|
+| Ofertas gerais | `geral` |
+| Só cupons | `cupons` |
+| Bebidas (pede 18+, mesma chave `tsp-18` da landing) | `bebidas` |
+| Baby e Kids | `babykids` |
+| Ferramentas | `ferramentas` |
+
+- `?o=<origem>` marca a origem (padrão `links`; aceita `utm_source`).
+- `?d=<slug>` sobe esse grupo para o topo com selo "Em destaque" (padrão `geral`).
+
+Exemplos: `/links/?o=bio`, `/links/?d=bebidas&o=story-bebidas`.
+Para adicionar um grupo, incluir o item em `GRUPOS` no script da página (o slug
+precisa existir em `dados/tsp/grupos-links.json`).
+Publicar = subir a pasta `links/` para `public_html/links/` na Hostinger.

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google Tag Manager — mesmo contêiner da landing geral -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tica Promos — escolha seu grupo</title>
+<meta name="description" content="Grupos de WhatsApp grátis do Tica Promos: ofertas gerais, só cupons, bebidas, baby e kids e ferramentas. Escolha um ou entre em vários.">
+<meta name="theme-color" content="#12141c">
+<meta property="og:title" content="Tica Promos — escolha seu grupo">
+<meta property="og:description" content="Ofertas gerais, só cupons, bebidas, baby e kids e ferramentas. Grátis, no seu WhatsApp.">
+<meta property="og:image" content="https://grupos.ticapromos.com.br/imgs/tico-og.png">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://grupos.ticapromos.com.br/links/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Agregador de links (stories e bio). Paleta do Tico, igual às landings.
+   Cada botão vai para o distribuidor ir.ticapromos.com.br/<slug>, nunca
+   para convite fixo — mantém rotação, censo e atribuição por origem. */
+:root{
+  --bg:#12141c; --surface:#1a1d28; --surface-2:#232838; --linha:#2e3348;
+  --coral:#fa5150; --vermelho:#d93636; --ardosia:#767d93; --cinza:#d4d7e2;
+  --texto:#f5f6fa; --suave:#a3a9bb; --wpp:#25d366;
+  --titulo:'Bebas Neue',Impact,sans-serif; --corpo:'Nunito',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--texto);font-family:var(--corpo);font-weight:500;line-height:1.5;
+  -webkit-font-smoothing:antialiased;min-height:100vh;
+  background-image:radial-gradient(ellipse 80% 40% at 50% 0%,rgba(250,81,80,.14),transparent 70%)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:10px}
+.wrap{max-width:480px;margin:0 auto;padding:36px 18px 40px}
+
+.topo{text-align:center;margin-bottom:26px}
+.topo img{width:88px;height:88px;border-radius:24px;background:#fff;margin:0 auto 14px;display:block;
+  box-shadow:0 12px 36px rgba(0,0,0,.45)}
+.topo h1{font-family:var(--titulo);font-weight:400;font-size:44px;line-height:.95;letter-spacing:1px}
+.topo h1 span{color:var(--coral)}
+.topo p{color:var(--suave);font-size:15px;margin-top:8px}
+
+.lista{list-style:none;display:flex;flex-direction:column;gap:12px}
+.grupo{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;text-decoration:none;
+  background:var(--surface);border:1px solid var(--linha);transition:transform .15s,border-color .15s,background .15s}
+.grupo:hover{border-color:var(--ardosia);background:var(--surface-2)}
+.grupo:active{transform:scale(.98)}
+.icone{flex:0 0 52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;font-size:28px}
+.info{flex:1;min-width:0}
+.info b{display:block;font-weight:900;font-size:17px;letter-spacing:-.2px}
+.info span{display:block;font-size:13px;color:var(--suave)}
+.seta{flex:0 0 30px;height:30px;border-radius:50%;background:var(--wpp);display:grid;place-items:center}
+.seta img{width:18px;height:18px}
+.info .selo{display:inline-block;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;
+  color:#fff;background:var(--coral);border-radius:6px;padding:2px 7px;margin-bottom:4px}
+.grupo.destaque{border:2px solid var(--coral);background:linear-gradient(135deg,rgba(250,81,80,.16),var(--surface) 60%);
+  padding:16px;box-shadow:0 10px 30px rgba(250,81,80,.18)}
+.grupo.destaque .icone{flex-basis:60px;height:60px;font-size:32px}
+
+.dica{text-align:center;color:var(--suave);font-size:13px;margin:18px 0 26px}
+.rodape{display:flex;flex-direction:column;gap:10px;align-items:center;font-size:14px}
+.rodape a{color:var(--cinza);text-decoration:none;font-weight:700;border-bottom:1px solid var(--linha);padding-bottom:2px}
+.rodape a:hover{color:#fff;border-color:var(--coral)}
+.rodape small{color:var(--ardosia);font-size:12px;margin-top:8px}
+
+/* Confirmação de idade (só bebidas), mesma chave de sessão da landing */
+.modal{position:fixed;inset:0;background:rgba(10,11,16,.8);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}
+.modal.aberta{display:flex}
+.caixa{background:var(--surface);border:1px solid var(--linha);border-radius:20px;padding:26px 22px;max-width:360px;width:100%;text-align:center}
+.caixa h3{font-family:var(--titulo);font-weight:400;font-size:32px;line-height:1;margin-bottom:10px}
+.caixa p{color:var(--suave);font-size:14px;margin-bottom:20px}
+.caixa .bts{display:flex;gap:10px}
+.caixa a,.caixa button{flex:1;padding:13px;border-radius:12px;font:inherit;font-weight:900;font-size:15px;cursor:pointer;text-decoration:none;border:0}
+#idade-sim{background:var(--wpp);color:#fff}
+#idade-nao{background:var(--surface-2);color:var(--texto);border:1px solid var(--linha)}
+@media (prefers-reduced-motion:reduce){.grupo{transition:none}}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSXGHM5P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<main class="wrap">
+  <header class="topo">
+    <img src="../imgs/tico.png" alt="Tico, mascote do Tica Promos" width="88" height="88">
+    <h1>Tica <span>Promos</span></h1>
+    <p>Escolha seu grupo. O Tico avisa quando o preço cai.</p>
+  </header>
+
+  <ul class="lista" id="lista"></ul>
+
+  <p class="dica">Todos grátis. Você pode entrar em mais de um.</p>
+
+  <footer class="rodape">
+    <a id="como" href="../">Ainda na dúvida? Veja como funciona</a>
+    <a href="https://www.instagram.com/ticapromos/" target="_blank" rel="noopener">@ticapromos no Instagram</a>
+    <small>Tica Promos · links de afiliado, sem custo extra pra você</small>
+  </footer>
+</main>
+
+<div class="modal" id="idade" role="dialog" aria-modal="true" aria-labelledby="idade-titulo">
+  <div class="caixa">
+    <h3 id="idade-titulo">Você tem 18 anos ou mais?</h3>
+    <p>O grupo de bebidas divulga bebida alcoólica.</p>
+    <div class="bts">
+      <button type="button" id="idade-nao">Não</button>
+      <a id="idade-sim" href="#">Sim, tenho</a>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+// Ordem padrão da lista. `slug` é a chave no distribuidor
+// (dados/tsp/grupos-links.json). Para destacar um nicho num story:
+//   /links/?d=bebidas&o=story-bebidas
+var GRUPOS = [
+  { slug:'geral',       icone:'🔥', nome:'Ofertas gerais', desc:'Tudo que despencou de preço, de todas as lojas' },
+  { slug:'cupons',      icone:'🎟️', nome:'Só cupons',      desc:'Só códigos de desconto, sem produto no meio' },
+  { slug:'bebidas',     icone:'🥃', nome:'Bebidas',        desc:'Whisky, gin, vodka, cerveja e energético · 18+', idade:true },
+  { slug:'babykids',    icone:'🧸', nome:'Baby e Kids',    desc:'Fralda, brinquedo, roupa e o que a criançada usa' },
+  { slug:'ferramentas', icone:'🔧', nome:'Ferramentas',    desc:'Furadeira, parafusadeira, jogo de chaves e afins' }
+];
+var BASE = 'https://ir.ticapromos.com.br/';
+
+var params = new URLSearchParams(location.search);
+var origem = (params.get('o') || params.get('utm_source') || 'links').slice(0, 40);
+var chaveDestaque = params.get('d');
+if (!GRUPOS.some(function (g) { return g.slug === chaveDestaque; })) chaveDestaque = 'geral';
+
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function destino(g) { return BASE + g.slug + '?o=' + encodeURIComponent(origem); }
+function registrar(g) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event:'entrar_grupo', nicho:g.slug, local:'links', origem:origem });
+}
+
+// Destaque sobe para o topo; o resto mantém a ordem.
+var ordem = GRUPOS.filter(function (g) { return g.slug === chaveDestaque; })
+  .concat(GRUPOS.filter(function (g) { return g.slug !== chaveDestaque; }));
+
+$('lista').innerHTML = ordem.map(function (g) {
+  var d = g.slug === chaveDestaque;
+  return '<li><a class="grupo' + (d ? ' destaque' : '') + '" data-slug="' + g.slug + '" href="' + esc(destino(g)) + '">' +
+    '<span class="icone" aria-hidden="true">' + g.icone + '</span>' +
+    '<span class="info">' + (d ? '<span class="selo">Em destaque</span>' : '') +
+    '<b>' + esc(g.nome) + '</b><span>' + esc(g.desc) + '</span></span>' +
+    '<span class="seta" aria-hidden="true"><img src="../imgs/whatsapp.png" alt=""></span></a></li>';
+}).join('');
+
+$('como').href = '../?o=' + encodeURIComponent(origem);
+
+// Cliques + confirmação de idade para bebidas
+var ultimoFoco = null, grupoIdade = null;
+function fechar() { $('idade').classList.remove('aberta'); if (ultimoFoco) ultimoFoco.focus(); }
+$('lista').addEventListener('click', function (e) {
+  var a = e.target.closest('a.grupo'); if (!a) return;
+  var g = GRUPOS.filter(function (x) { return x.slug === a.dataset.slug; })[0];
+  if (g.idade) {
+    var ok = false;
+    try { ok = sessionStorage.getItem('tsp-18') === '1'; } catch (err) { /* navegação privada */ }
+    if (!ok) {
+      e.preventDefault();
+      ultimoFoco = a;
+      grupoIdade = g;
+      $('idade-sim').href = destino(g);
+      $('idade').classList.add('aberta');
+      $('idade-sim').focus();
+      return;
+    }
+  }
+  registrar(g);
+});
+$('idade-sim').addEventListener('click', function () {
+  try { sessionStorage.setItem('tsp-18', '1'); } catch (err) { /* navegação privada */ }
+  if (grupoIdade) registrar(grupoIdade);
+});
+$('idade-nao').addEventListener('click', function () {
+  if (this.dataset.fechar) return fechar();
+  $('idade-titulo').textContent = 'Então esse grupo não é pra você';
+  $('idade').querySelector('p').textContent = 'Ele divulga bebida alcoólica e é só para maiores de 18 anos. Os outros grupos continuam abertos.';
+  $('idade-sim').style.display = 'none';
+  this.textContent = 'Fechar';
+  this.dataset.fechar = '1';
+});
+$('idade').addEventListener('click', function (e) { if (e.target === $('idade')) fechar(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+</script>
+</body>
+</html>
