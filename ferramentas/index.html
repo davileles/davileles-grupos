@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Google Tag Manager — mesmo contêiner da landing geral -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tica Promos Ferramentas — ferramenta boa sem preço de balcão</title>
+<meta name="description" content="Furadeira, esmerilhadeira, lavadora e jogo de chaves quando o preço cai de verdade. O Tico avisa no seu WhatsApp, num grupo só de ferramenta. Grátis.">
+<meta name="theme-color" content="#12141c">
+<meta property="og:title" content="Tica Promos Ferramentas">
+<meta property="og:description" content="Ferramenta boa dura anos. Não precisa custar preço de balcão. Grupo de WhatsApp só de ferramenta, grátis.">
+<meta property="og:image" content="https://grupos.ticapromos.com.br/ferramentas/imgs/og-ferramentas.jpg">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://grupos.ticapromos.com.br/ferramentas/">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Mesma família das landings de nicho (Bebas + Nunito, paleta do Tico), com o
+   navy dominante: o público aqui compra por especificação, não por impulso.
+   A peça de assinatura é a plaqueta do topo — a placa de identificação
+   parafusada na carcaça da máquina, com marca, ficha e preço. */
+:root{
+  --bg:#12141c; --surface:#1a1d28; --surface-2:#232838; --linha:#2e3348;
+  --coral:#fa5150; --vermelho:#d93636; --ardosia:#767d93; --cinza:#d4d7e2;
+  --texto:#f5f6fa; --suave:#a3a9bb;
+  --metal:#dfe2ea; --metal-2:#c3c8d4; --metal-texto:#2e3348;
+  --wpp:#25d366; --wpp-2:#128c7e;
+  --max:1080px; --pad:clamp(18px,4vw,40px);
+  --titulo:'Bebas Neue',Impact,sans-serif; --corpo:'Nunito',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--texto);font-family:var(--corpo);font-weight:500;line-height:1.55;
+  -webkit-font-smoothing:antialiased;padding-bottom:84px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:64px 0}
+.faixa{background:var(--surface);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+h2{font-family:var(--titulo);font-weight:400;font-size:clamp(38px,5.4vw,60px);line-height:.95;letter-spacing:.5px;margin-bottom:18px;max-width:22ch}
+.intro{color:var(--suave);font-size:16px;max-width:58ch;margin-bottom:30px}
+.intro strong{color:var(--texto)}
+
+/* ── Topo ─────────────────────────────────────────────────────────── */
+.topo{display:flex;align-items:center;gap:12px;padding:18px 0 0}
+.topo img{width:48px;height:48px;border-radius:12px;background:#fff}
+.topo b{display:block;font-weight:900;font-size:15px;letter-spacing:-.2px}
+.topo span{font-size:12px;color:var(--suave)}
+
+/* ── Hero ─────────────────────────────────────────────────────────── */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:40px 0 64px}
+.hero h1{font-family:var(--titulo);font-weight:400;font-size:clamp(54px,7.2vw,96px);line-height:.9;letter-spacing:1px}
+.hero h1 span{display:block;color:var(--coral)}
+.hero p{font-size:clamp(16px,1.7vw,19px);color:var(--suave);margin:20px 0 28px;max-width:46ch}
+.hero p strong{color:var(--texto)}
+.garantias{list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:13px;color:var(--suave)}
+.garantias li::before{content:"✓";color:var(--wpp);font-weight:900;margin-right:6px}
+
+.btn-wpp{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:420px;
+  padding:18px 28px;border-radius:14px;background:linear-gradient(135deg,var(--wpp),var(--wpp-2));
+  color:#fff;text-decoration:none;font-weight:900;font-size:17px;
+  box-shadow:0 10px 32px rgba(37,211,102,.3);transition:transform .15s,box-shadow .15s}
+.btn-wpp:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,.42)}
+.btn-wpp:active{transform:scale(.98)}
+.btn-wpp img{width:26px;height:26px}
+
+/* Plaqueta de identificação: é aqui que a página gasta a ousadia. */
+.plaqueta-area{justify-self:center;width:min(420px,100%)}
+.plaqueta{position:relative;border-radius:14px;color:var(--metal-texto);
+  background:linear-gradient(160deg,var(--metal) 0%,#f1f3f7 38%,var(--metal-2) 100%);
+  box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 -2px 0 rgba(0,0,0,.12) inset,0 28px 64px rgba(0,0,0,.55);
+  padding:26px 26px 22px}
+.plaqueta i.parafuso{position:absolute;width:12px;height:12px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#fff,#9aa0b0 60%,#6b7182);box-shadow:0 1px 1px rgba(0,0,0,.35)}
+.plaqueta i.parafuso::after{content:"";position:absolute;left:2px;right:2px;top:5px;height:2px;background:#5a6072;transform:rotate(35deg);border-radius:2px}
+.plaqueta i.p1{top:10px;left:10px}.plaqueta i.p2{top:10px;right:10px}
+.plaqueta i.p3{bottom:10px;left:10px}.plaqueta i.p4{bottom:10px;right:10px}
+.plq-cab{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11.5px;font-weight:900;
+  letter-spacing:1.2px;text-transform:uppercase;color:#616880;padding:0 8px}
+.plq-cab b{background:var(--vermelho);color:#fff;border-radius:6px;padding:3px 8px;letter-spacing:.5px;font-size:13px}
+.plq-meio{display:grid;grid-template-columns:118px 1fr;gap:16px;align-items:center;margin:14px 0 16px}
+.plq-foto{width:118px;height:118px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid #c3c8d4}
+.plq-marca{font-family:var(--titulo);font-size:40px;line-height:.9;letter-spacing:1px;color:var(--metal-texto)}
+.plq-nome{font-weight:800;font-size:14px;line-height:1.3;margin-top:4px}
+.fichas{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.fichas span{font-size:11.5px;font-weight:800;border:1.5px solid #8f95a6;border-radius:5px;padding:1px 7px;color:#4a5064;background:rgba(255,255,255,.4)}
+.plq-preco{background:var(--bg);color:var(--texto);border-radius:10px;padding:14px 16px 16px}
+.plq-preco small{display:block;font-size:12px;font-weight:700;color:var(--suave)}
+.plq-preco b.valor{display:block;font-family:var(--titulo);font-weight:400;font-size:clamp(50px,7vw,60px);line-height:1;letter-spacing:.5px}
+.barras{margin-top:10px;display:grid;gap:7px}
+.barra{display:grid;grid-template-columns:86px 1fr 84px;align-items:center;gap:10px;font-size:12.5px;font-weight:700;color:var(--cinza)}
+.barra .trilho{height:9px;background:var(--surface-2);border-radius:99px;overflow:hidden}
+.barra .trilho i{display:block;height:100%;width:0;border-radius:99px;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.barra.tipico i{background:var(--ardosia)}
+.barra.ticado i{background:var(--coral)}
+.barra em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums}
+.barra.ticado em{color:var(--coral);font-weight:900}
+.plq-rodape{font-size:12px;color:#616880;font-weight:700;margin-top:10px;padding:0 8px}
+.plaqueta .plq-cab,.plaqueta .plq-meio,.plaqueta .plq-preco,.plaqueta .plq-rodape{transition:opacity .22s}
+.plaqueta.trocando .plq-cab,.plaqueta.trocando .plq-meio,.plaqueta.trocando .plq-preco,.plaqueta.trocando .plq-rodape{opacity:0}
+.plq-nav{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.plq-nav button{width:10px;height:10px;border-radius:50%;border:none;background:var(--linha);padding:0}
+.plq-nav button[aria-current="true"]{background:var(--coral)}
+
+/* ── Dores ────────────────────────────────────────────────────────── */
+.dores-lista{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.dores-lista li{padding:20px 0;border-bottom:1px solid var(--linha)}
+.dores-lista strong{display:block;font-size:18px;font-weight:900;margin-bottom:4px}
+.dores-lista span{color:var(--suave);font-size:15px}
+.virada{margin-top:34px;font-size:clamp(18px,2.2vw,22px);font-weight:800;max-width:54ch}
+.virada em{font-style:normal;color:var(--coral)}
+
+/* ── Regras ───────────────────────────────────────────────────────── */
+.regras{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:r}
+.regras li{background:var(--surface);border:1px solid var(--linha);border-radius:14px;padding:22px 22px 24px;position:relative;counter-increment:r}
+.regras li::before{content:counter(r,decimal-leading-zero);font-family:var(--titulo);font-size:34px;color:var(--coral);line-height:1;display:block;margin-bottom:10px}
+.regras b{display:block;font-size:18px;font-weight:900;margin-bottom:6px}
+.regras p{color:var(--suave);font-size:15px}
+.marcas{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.marcas span{font-family:var(--titulo);font-size:20px;letter-spacing:1px;color:var(--cinza);border:1px solid var(--linha);border-radius:8px;padding:4px 12px 2px}
+
+/* ── Vitrine ──────────────────────────────────────────────────────── */
+.data-chave{display:inline-flex;align-items:baseline;gap:8px;border:1px solid var(--linha);background:var(--bg);
+  border-radius:999px;padding:7px 16px;font-weight:800;font-size:14px;margin-bottom:18px}
+.data-chave b{color:var(--coral);font-weight:900}
+.data-chave[hidden]{display:none}
+.prateleira{display:grid;grid-auto-flow:column;grid-auto-columns:210px;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:4px 2px 18px;scrollbar-width:thin;scrollbar-color:var(--linha) transparent}
+.achado{scroll-snap-align:start;background:var(--bg);border:1px solid var(--linha);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.achado img{aspect-ratio:1;object-fit:contain;width:100%;height:auto;background:#fff}
+.achado div{padding:12px 14px 14px;display:flex;flex-direction:column;gap:3px;flex:1}
+.achado .marca{font-family:var(--titulo);font-size:22px;letter-spacing:1px;line-height:1}
+.achado h3{font-size:13px;font-weight:700;line-height:1.3;color:var(--cinza);margin-bottom:auto}
+.achado .ref{font-size:12px;color:var(--ardosia);margin-top:8px}
+.achado b{font-size:21px;font-weight:900;color:var(--coral);letter-spacing:-.4px;line-height:1.1}
+.achado small{font-size:11.5px;color:var(--suave)}
+.aviso-preco{font-size:12.5px;color:var(--ardosia);margin-top:4px;max-width:72ch}
+
+/* ── Dois públicos ────────────────────────────────────────────────── */
+.publicos{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.publico{border:1px solid var(--linha);border-radius:14px;padding:26px}
+.publico i{font-style:normal;font-size:30px}
+.publico b{display:block;font-family:var(--titulo);font-weight:400;font-size:32px;letter-spacing:.5px;line-height:1;margin:10px 0 8px}
+.publico p{color:var(--suave);font-size:15.5px}
+
+/* ── Perguntas ────────────────────────────────────────────────────── */
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 36px 20px 0;font-weight:800;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:24px;color:var(--coral);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{color:var(--suave);padding:0 0 20px;font-size:15.5px;max-width:62ch}
+
+/* ── Fecho ────────────────────────────────────────────────────────── */
+.fecho{text-align:center;padding:72px 0 56px}
+.fecho img.tico{width:120px;height:120px;border-radius:26px;background:#fff;margin:0 auto 22px}
+.fecho h2{font-size:clamp(46px,7vw,84px);margin:0 auto 18px;max-width:none}
+.fecho p{color:var(--suave);margin:0 auto 26px;max-width:46ch}
+footer{border-top:1px solid var(--linha);padding:28px 0 36px;text-align:center}
+footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-height:1.7}
+
+.fixo{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(18,20,28,.94);backdrop-filter:blur(12px);
+  border-top:1px solid var(--linha);padding:10px 16px;display:flex;justify-content:center;transform:translateY(110%);transition:transform .25s}
+.fixo.visivel{transform:none}
+.fixo .btn-wpp{padding:13px 22px;font-size:15px;max-width:400px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:40px;padding-top:28px}
+  .dores-lista,.regras,.publicos{grid-template-columns:1fr}
+  section{padding:52px 0}
+  .prateleira{grid-auto-columns:170px;margin-right:calc(var(--pad) * -1)}
+}
+@media (max-width:420px){
+  .plaqueta{padding:24px 18px 20px}
+  .plq-meio{grid-template-columns:92px 1fr;gap:12px}
+  .plq-foto{width:92px;height:92px}
+  .plq-marca{font-size:34px}
+  .barra{grid-template-columns:78px 1fr 76px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSXGHM5P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="wrap">
+  <header class="topo">
+    <img src="imgs/tico-ferramentas.png" alt="Tico, mascote do Tica Promos, de capacete e com uma ferramenta" width="48" height="48">
+    <div><b>Tica Promos Ferramentas</b><span>Grupo de WhatsApp só de ferramenta</span></div>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Ferramenta boa dura anos.<span>Não precisa custar preço de balcão.</span></h1>
+      <p>Furadeira, esmerilhadeira, lavadora e jogo de brocas mudam de preço toda semana nas lojas grandes. O Tico acompanha e <strong>avisa no seu WhatsApp quando cai de verdade</strong>, num grupo só de ferramenta.</p>
+      <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/ferramentas" data-local="hero">
+        <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+        <span>Entrar no grupo de ferramentas</span>
+      </a>
+      <ul class="garantias"><li>Grátis</li><li>Só ferramenta</li><li>Sai quando quiser</li></ul>
+    </div>
+
+    <div class="plaqueta-area">
+      <div class="plaqueta" id="plaqueta" aria-live="polite">
+        <i class="parafuso p1"></i><i class="parafuso p2"></i><i class="parafuso p3"></i><i class="parafuso p4"></i>
+        <div class="plq-cab"><span id="plq-data">—</span><b id="plq-pct">—</b></div>
+        <div class="plq-meio">
+          <img class="plq-foto" id="plq-foto" src="imgs/B096QQ2BFF.jpg" alt="" width="118" height="118">
+          <div>
+            <div class="plq-marca" id="plq-marca">—</div>
+            <div class="plq-nome" id="plq-nome">—</div>
+            <div class="fichas" id="plq-fichas"></div>
+          </div>
+        </div>
+        <div class="plq-preco">
+          <small>Saiu por</small>
+          <b class="valor" id="plq-valor">—</b>
+          <div class="barras">
+            <div class="barra tipico"><span>Preço típico</span><span class="trilho"><i id="bar-tipico"></i></span><em id="val-tipico">—</em></div>
+            <div class="barra ticado"><span>No aviso</span><span class="trilho"><i id="bar-ticado"></i></span><em id="val-ticado">—</em></div>
+          </div>
+        </div>
+        <div class="plq-rodape" id="plq-loja">—</div>
+      </div>
+      <div class="plq-nav" id="plq-nav" aria-label="Trocar achado"></div>
+    </div>
+  </div>
+</div>
+
+<section class="faixa">
+  <div class="wrap">
+    <h2>Já passou por isso?</h2>
+    <ul class="dores-lista">
+      <li><strong>Comprou no meio do serviço</strong><span>A broca quebrou no sábado, e a única saída foi o preço do balcão da loja de material de construção.</span></li>
+      <li><strong>Caiu na parafusadeira "48V"</strong><span>A caixa prometia força de sobra, e ela não aguentou o primeiro furo na parede.</span></li>
+      <li><strong>Kit de 200 peças, 10 prestam</strong><span>Muita peça na foto, pouca que você usa de verdade.</span></li>
+      <li><strong>A lavadora subiu na semana do feriado</strong><span>Você esperou baixar, e ela subiu justo quando ia lavar a calçada.</span></li>
+    </ul>
+    <p class="virada">Ferramenta a gente compra pouco e usa por anos. Vale esperar o preço certo. <em>O Tico fica de olho.</em></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como o Tico escolhe o que entra</h2>
+    <p class="intro">São três regras para decidir o que vira aviso no grupo, e o que fica de fora.</p>
+    <ul class="regras">
+      <li><b>Marca conhecida entra</b><p>Bosch, Makita, DeWalt, Vonder, Tramontina e outras. Inclui marca de baixo custo com linha própria, como Mondial e The Black Tools.</p></li>
+      <li><b>Genérico só bem abaixo do normal</b><p>Sem marca conhecida, só entra se estiver pelo menos 25% abaixo do que costuma custar no mês.</p></li>
+      <li><b>Voltagem de mentira fica fora</b><p>"48V" e "88V" em ferramenta sem marca não chegam ao grupo. Bateria de verdade não precisa exagerar.</p></li>
+    </ul>
+    <div class="marcas" aria-label="Algumas marcas que entram direto">
+      <span>Bosch</span><span>Makita</span><span>DeWalt</span><span>Vonder</span><span>Tramontina</span><span>Black+Decker</span><span>Kärcher</span><span>WAP</span><span>Stanley</span><span>Mondial</span>
+    </div>
+  </div>
+</section>
+
+<section class="faixa">
+  <div class="wrap">
+    <span class="data-chave" id="data-chave" hidden></span>
+    <h2 id="vitrine-titulo">O que o Tico já ticou</h2>
+    <p class="intro">Alguns achados de marca que já saíram no grupo, comparados com o preço típico do mês na mesma loja.</p>
+    <div class="prateleira" id="prateleira" tabindex="0" aria-label="Achados de ferramentas enviados no grupo"></div>
+    <p class="aviso-preco">Preços da data do aviso. Preço típico é a mediana do preço de vitrine que o Tico acompanhou no mês. Preço e estoque mudam rápido, por isso o aviso chega na hora.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Serve para os dois lados da bancada</h2>
+    <div class="publicos">
+      <div class="publico"><i aria-hidden="true">🦺</i><b>Quem trabalha com ferramenta</b><p>Eletricista, marceneiro, serralheiro, mecânico. Ferramenta é instrumento de trabalho: a esmerilhadeira, o nível a laser e o jogo de brocas entram no preço certo, na hora planejada.</p></div>
+      <div class="publico"><i aria-hidden="true">🏠</i><b>Quem resolve em casa</b><p>Pendurar prateleira, montar móvel, lavar a calçada. Kit básico, parafusadeira e lavadora sem pagar o preço de quem precisa para ontem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faixa">
+  <div class="wrap">
+    <h2>Perguntas rápidas</h2>
+    <div class="faq">
+      <details><summary>É grátis mesmo?</summary><p>É. Os links são de afiliado: você paga o mesmo preço da loja e o grupo recebe uma comissão dela. Não existe plano pago.</p></details>
+      <details><summary>Vai lotar meu WhatsApp?</summary><p>Saem alguns avisos por semana, só de ferramenta. Se preferir, silencia o grupo e abre quando precisar comprar: os achados ficam lá.</p></details>
+      <details><summary>Só tem ferramenta cara?</summary><p>Não. Tem de trena e jogo de brocas a nível a laser, e marca de baixo custo também entra quando é marca de verdade.</p></details>
+      <details><summary>Como sei se serve para o que eu preciso?</summary><p>O aviso traz marca, modelo e a especificação principal (potência, voltagem, número de peças). Confira a ficha completa no site da loja antes de comprar.</p></details>
+      <details><summary>E se eu quiser sair?</summary><p>É só sair do grupo, como qualquer outro. Sem cadastro e sem nada para cancelar.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="fecho">
+  <div class="wrap">
+    <img class="tico" src="imgs/tico-ferramentas.png" alt="" width="120" height="120" loading="lazy">
+    <h2>A próxima ferramenta<br>já está no radar.</h2>
+    <p>Entra agora e recebe o próximo achado na hora, não no print atrasado.</p>
+    <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/ferramentas" data-local="fecho">
+      <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+      <span>Entrar no grupo de ferramentas</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Preço e estoque mudam a qualquer momento: confira no site da loja antes de fechar a compra. Os links enviados no grupo são de afiliado. Como Associado Amazon, recebemos por compras qualificadas. Use equipamento de proteção e siga o manual do fabricante.</p>
+    <p style="margin-top:12px">© 2026 Tica Promos</p>
+  </div>
+</footer>
+
+<div class="fixo" id="fixo">
+  <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/ferramentas" data-local="fixo">
+    <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
+    <span>Entrar no grupo, é grátis</span>
+  </a>
+</div>
+
+<script>
+'use strict';
+// Achados reais do histórico de envios (davileles/dados, tsp/historico_envios).
+// Preço típico = mediana do preço de vitrine em tsp/precos_hist_2026-09.json.
+// Desconto e barras são calculados aqui, nunca digitados.
+var ACHADOS = [
+  { foto:'B07CVCTJLQ', marca:'Bosch',      nome:'Kit de pontas e brocas X-Line', fichas:['103 peças','titânio','maleta'], por:157.42, tipico:199.90, loja:'Mercado Livre', data:'30/08', cupom:true  },
+  { foto:'B0FP5K3JRP', marca:'WAP',        nome:'Lavadora de alta pressão WL 1800', fichas:['1500 PSI','1400 W'],       por:224.25, tipico:299.00, loja:'Mercado Livre', data:'24/08', cupom:true  },
+  { foto:'B076M75SZG', marca:'Tramontina', nome:'Trena de fibra de vidro',        fichas:['30 m'],                      por:39.29,  tipico:163.90, loja:'Amazon',        data:'05/09', cupom:false },
+  { foto:'B096QQ2BFF', marca:'Makita',     nome:'Esmerilhadeira angular M9510B', fichas:['850 W','115 mm'],            por:264.45, tipico:309.00, loja:'Mercado Livre', data:'27/08', cupom:true  },
+  { foto:'B0C4M74NQ9', marca:'DeWalt',     nome:'Nível a laser DW088CG',          fichas:['laser verde','30 m'],        por:610.90, tipico:705.00, loja:'Mercado Livre', data:'27/08', cupom:true  },
+  { foto:'B0DBJ9PSZY', marca:'Mondial',    nome:'Serra circular FSC-04',          fichas:['1500 W'],                    por:219.75, tipico:253.27, loja:'Amazon',        data:'29/08', cupom:false }
+];
+
+var $ = function (id) { return document.getElementById(id); };
+function brl(v) { return 'R$ ' + Number(v).toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function pct(a) { return Math.round((1 - a.por / a.tipico) * 100); }
+var reduz = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ── Plaqueta ───────────────────────────────────────────────────────────
+var atual = 0, timer = null;
+function mostrar(i) {
+  var a = ACHADOS[i], p = $('plaqueta');
+  atual = i;
+  p.classList.add('trocando');
+  $('bar-tipico').style.width = '0'; $('bar-ticado').style.width = '0';
+  setTimeout(function () {
+    $('plq-foto').src = 'imgs/' + a.foto + '.jpg';
+    $('plq-foto').alt = a.marca + ' ' + a.nome;
+    $('plq-marca').textContent = a.marca;
+    $('plq-nome').textContent = a.nome;
+    $('plq-fichas').innerHTML = a.fichas.map(function (f) { return '<span>' + esc(f) + '</span>'; }).join('');
+    $('plq-data').textContent = 'Ticado em ' + a.data;
+    $('plq-pct').textContent = '-' + pct(a) + '%';
+    $('plq-valor').textContent = brl(a.por);
+    $('val-tipico').textContent = brl(a.tipico);
+    $('val-ticado').textContent = brl(a.por);
+    $('plq-loja').textContent = a.loja + (a.cupom ? ', com cupom' : '');
+    p.classList.remove('trocando');
+    requestAnimationFrame(function () {
+      $('bar-tipico').style.width = '100%';
+      $('bar-ticado').style.width = Math.round(a.por / a.tipico * 100) + '%';
+    });
+    var bts = $('plq-nav').children;
+    for (var k = 0; k < bts.length; k++) bts[k].setAttribute('aria-current', String(k === i));
+  }, reduz ? 0 : 230);
+}
+function agendar() {
+  clearInterval(timer);
+  if (!reduz) timer = setInterval(function () { mostrar((atual + 1) % ACHADOS.length); }, 4500);
+}
+(function () {
+  var nav = $('plq-nav');
+  nav.innerHTML = ACHADOS.map(function (a) { return '<button type="button" aria-label="Ver ' + esc(a.marca + ' ' + a.nome) + '"></button>'; }).join('');
+  nav.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button'); if (!b) return;
+    mostrar(Array.prototype.indexOf.call(nav.children, b)); agendar();
+  });
+  mostrar(0); agendar();
+  document.addEventListener('visibilitychange', function () { if (document.hidden) clearInterval(timer); else agendar(); });
+})();
+
+// ── Vitrine ────────────────────────────────────────────────────────────
+$('prateleira').innerHTML = ACHADOS.map(function (a) {
+  return '<article class="achado"><img src="imgs/' + a.foto + '.jpg" alt="" loading="lazy" width="480" height="480">' +
+    '<div><span class="marca">' + esc(a.marca) + '</span><h3>' + esc(a.nome) + '</h3>' +
+    '<span class="ref">Típico ' + brl(a.tipico) + '</span><b>' + brl(a.por) + '</b>' +
+    '<small>' + pct(a) + '% abaixo, ' + esc(a.loja) + ', ' + a.data + '</small></div></article>';
+}).join('');
+
+// ── Data comemorativa (calculada no dia, fuso do navegador) ────────────
+//   Dia dos Pais (2º domingo de agosto) → Black Friday (última sexta de
+//   novembro) → Natal (25/12). Selo só aparece a até 75 dias da data; no
+//   próprio dia muda o título; fora das janelas, título neutro e sem selo.
+(function () {
+  var hoje = new Date(); hoje.setHours(0,0,0,0);
+  var JANELA = 75, NEUTRO = 'O que o Tico já ticou';
+  function diaDosPais(ano) { var d = new Date(ano, 7, 1); var dom = (7 - d.getDay()) % 7; return new Date(ano, 7, 1 + dom + 7); }
+  function blackFriday(ano) { var d = new Date(ano, 10, 30); while (d.getDay() !== 5) d.setDate(d.getDate() - 1); return d; }
+  function datas(ano) {
+    return [
+      { dia: diaDosPais(ano),  nome: 'Dia dos Pais', titulo: 'Presente de Dia dos Pais que ele vai usar de verdade', hoje: 'Dia dos Pais: ferramenta é presente que dura' },
+      { dia: blackFriday(ano), nome: 'Black Friday', titulo: 'Na Black Friday, o Tico separa o desconto de verdade do falso', hoje: 'Hoje o Tico separa o desconto de verdade do falso' },
+      { dia: new Date(ano, 11, 25), nome: 'Natal', titulo: 'Presente de Natal para quem vive consertando tudo', hoje: NEUTRO }
+    ];
+  }
+  var lista = datas(hoje.getFullYear()).concat(datas(hoje.getFullYear() + 1));
+  var alvo = null;
+  for (var i = 0; i < lista.length; i++) { if (lista[i].dia >= hoje) { alvo = lista[i]; break; } }
+  var dias = alvo ? Math.round((alvo.dia - hoje) / 864e5) : null;
+  if (alvo && dias <= JANELA) {
+    $('data-chave').innerHTML = alvo.nome + (dias === 0 ? ' é <b>hoje</b>' : ' em <b>' + dias + (dias === 1 ? ' dia' : ' dias') + '</b>');
+    $('data-chave').hidden = false;
+    $('vitrine-titulo').textContent = dias === 0 ? alvo.hoje : alvo.titulo;
+  } else {
+    $('vitrine-titulo').textContent = NEUTRO;
+  }
+})();
+
+// ── Barra fixa ─────────────────────────────────────────────────────────
+(function () {
+  var alvo = document.querySelector('.hero .btn-wpp');
+  if (!('IntersectionObserver' in window) || !alvo) { $('fixo').classList.add('visivel'); return; }
+  new IntersectionObserver(function (es) { $('fixo').classList.toggle('visivel', !es[0].isIntersecting); }).observe(alvo);
+})();
+
+// ── Destino e origem ───────────────────────────────────────────────────
+// Mesmo padrão das outras landings: distribuidor do proxy (slug "ferramentas")
+// com ?o= para atribuir o canal em grupos-links.json.
+(function () {
+  var DESTINO = 'https://ir.ticapromos.com.br/ferramentas';
+  var params = new URLSearchParams(location.search);
+  var origem = (params.get('o') || params.get('utm_source') || 'landing-ferramentas')
+                 .toLowerCase().slice(0, 40).replace(/[^\w.\-]/g, '') || 'landing-ferramentas';
+  var destino = DESTINO + '?o=' + encodeURIComponent(origem);
+  var links = document.querySelectorAll('a.cta');
+  for (var i = 0; i < links.length; i++) links[i].href = destino;
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a.cta');
+    if (!a) return;
+    a.href = destino;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'entrar_grupo', nicho: 'ferramentas', local: a.getAttribute('data-local') || 'desconhecido', origem: origem });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,17 +1,13 @@
 # Landing de captação — Tica Promos
 
 Página de entrada dos grupos de WhatsApp. **Este repositório é a fonte da
-verdade**; a publicação é manual, por upload na Hostinger.
+verdade** e é publicado pelo GitHub Pages em `grupos.ticapromos.com.br`.
 
 ## Como publicar
 
-1. Baixe o conteúdo deste repositório.
-2. Suba tudo para `public_html/` na Hostinger, no domínio da landing.
-3. Confira `https://<dominio>/` — o cache do LiteSpeed pode segurar a versão
-   antiga por alguns minutos.
-
-Não existe deploy automático aqui. Se você editar direto no painel da
-Hostinger, a alteração se perde no próximo upload — edite aqui primeiro.
+Commit na `main` publica sozinho pelo GitHub Pages (domínio em `CNAME`). Leva
+de um a dois minutos; confira em aba anônima. Não existe mais cópia na
+Hostinger — o site de lá foi excluído em set/2026.
 
 ## Estrutura
 
@@ -62,8 +58,8 @@ Cada nicho tem a própria landing numa subpasta, reaproveitando `favicon.ico`,
 |---|---|---|
 | `bebidas/` | `ir.ticapromos.com.br/bebidas` | `landing-bebidas` |
 | `babykids/` | `ir.ticapromos.com.br/babykids` | `landing-babykids` |
+| `ferramentas/` | `ir.ticapromos.com.br/ferramentas` | `landing-ferramentas` |
 
-Publicar = subir a subpasta inteira para `public_html/<nicho>/` na Hostinger.
 O `?o=` / `utm_source` funciona igual à landing geral. A landing de bebidas pede
 confirmação de 18+ no primeiro clique do CTA (guardada na sessão) e empurra o
 evento `entrar_grupo` com `nicho` e `local` no `dataLayer`.
@@ -73,6 +69,13 @@ envios da categoria bebidas — atualizar à mão quando envelhecerem.
 A landing Baby e Kids não pede confirmação de idade. Os preços típicos dela são a
 mediana do preço de vitrine em `dados/tsp/precos_hist_AAAA-MM.json`; a faixa de
 data comemorativa (Dia das Crianças até 12/10, depois Natal) é calculada no dia.
+
+A landing de Ferramentas mostra só achados de marca e explica as regras de
+curadoria do grupo (as mesmas de `curadoriaNicho` em `dados/tsp/categorias.json`:
+marca reconhecida entra, genérico só 25% abaixo da mediana, voltagem inflada
+fica fora) — se as regras mudarem lá, atualizar o texto da seção "Como o Tico
+escolhe o que entra". Selo de data: Dia dos Pais → Black Friday → Natal, a até
+75 dias da data, calculado no dia.
 
 ## Agregador de links (`links/`)
 
@@ -93,4 +96,3 @@ para o distribuidor (`ir.ticapromos.com.br/<slug>`), nunca para convite fixo.
 Exemplos: `/links/?o=bio`, `/links/?d=bebidas&o=story-bebidas`.
 Para adicionar um grupo, incluir o item em `GRUPOS` no script da página (o slug
 precisa existir em `dados/tsp/grupos-links.json`).
-Publicar = subir a pasta `links/` para `public_html/links/` na Hostinger.
