@@ -9,11 +9,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tica Promos Baby e Kids — fralda é gasto fixo, o preço não é</title>
-<meta name="description" content="Fralda, lenço, brinquedo e livro infantil quando o preço cai de verdade. O Tico avisa no seu WhatsApp, num grupo só de baby e kids. Grátis.">
+<title>Tica Promos Baby e Kids — criança custa caro, não precisa custar preço cheio</title>
+<meta name="description" content="Fralda, brinquedo, livro infantil e cadeirinha quando o preço cai de verdade. O Tico avisa no seu WhatsApp, num grupo só de baby e kids. Grátis.">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Tica Promos Baby e Kids">
-<meta property="og:description" content="Fralda é gasto fixo. O preço não é. Grupo de WhatsApp só de baby e kids, grátis.">
+<meta property="og:description" content="Criança custa caro. Não precisa custar preço cheio. Grupo de WhatsApp só de baby e kids, grátis.">
 <meta property="og:image" content="https://grupos.ticapromos.com.br/babykids/imgs/og-babykids.jpg">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://grupos.ticapromos.com.br/babykids/">
@@ -25,8 +25,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 /* Paleta do Tico em versão clara: é o mesmo coral e o mesmo navy, mas o
    público aqui compra por cuidado, não por ocasião. Uma família só (Nunito,
-   arredondada). A peça de assinatura é a etiqueta de preço por fralda — a
-   conta que pai e mãe fazem de verdade na gôndola. */
+   arredondada). A peça de assinatura é a etiqueta do topo: alterna fralda
+   (preço por unidade, a conta que pai e mãe fazem na gôndola) com brinquedo
+   e livro, para quem já passou da fase da fralda também se ver ali. */
 :root{
   --bg:#f4f5f8; --surface:#ffffff; --surface-2:#eef0f5; --linha:#d4d7e2; --linha-forte:#b8bdce;
   --navy:#2e3348; --coral:#fa5150; --vermelho:#d93636; --tinta:#c22f2f;
@@ -88,7 +89,7 @@ h2{font-weight:900;font-size:clamp(30px,4.2vw,44px);line-height:1.08;letter-spac
 .unidade b{display:block;font-weight:900;font-size:clamp(52px,7vw,64px);line-height:1;letter-spacing:-2.5px;margin-top:2px}
 .unidade b i{font-style:normal;font-size:.36em;letter-spacing:0;margin-left:6px;font-weight:800;opacity:.85}
 .barras{margin-top:16px;display:grid;gap:8px}
-.barra{display:grid;grid-template-columns:92px 1fr 64px;align-items:center;gap:10px;font-size:12.5px;font-weight:700}
+.barra{display:grid;grid-template-columns:92px 1fr 78px;align-items:center;gap:10px;font-size:12.5px;font-weight:700}
 .barra .trilho{height:10px;background:var(--surface-2);border-radius:99px;overflow:hidden}
 .barra .trilho i{display:block;height:100%;border-radius:99px;width:0;transition:width .6s cubic-bezier(.2,.8,.2,1)}
 .barra.tipico i{background:var(--linha-forte)}
@@ -206,7 +207,7 @@ footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-h
   .etq-foto{width:96px;height:96px}
   .campos{grid-template-columns:1fr 1fr}
   .campos .campo:last-child{grid-column:1/-1}
-  .barra{grid-template-columns:84px 1fr 58px}
+  .barra{grid-template-columns:84px 1fr 72px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -225,8 +226,8 @@ footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-h
 
   <div class="hero">
     <div>
-      <h1>Fralda é gasto fixo.<span>O preço não é.</span></h1>
-      <p>O mesmo pacote muda de preço toda semana nas lojas grandes. O Tico acompanha e <strong>avisa no seu WhatsApp quando cai de verdade</strong>: fralda, lenço, brinquedo e livro, num grupo só de baby e kids.</p>
+      <h1>Criança custa caro.<span>Não precisa custar preço cheio.</span></h1>
+      <p>Fralda, brinquedo, livro e cadeirinha mudam de preço toda semana nas lojas grandes. O Tico acompanha e <strong>avisa no seu WhatsApp quando cai de verdade</strong>, num grupo só de baby e kids.</p>
       <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/babykids" data-local="hero">
         <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
         <span>Entrar no grupo Baby e Kids</span>
@@ -241,28 +242,28 @@ footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-h
         <div><div class="etq-nome" id="etq-nome">—</div><div class="etq-pacote" id="etq-pacote">—</div></div>
       </div>
       <div class="unidade">
-        <small>Saiu por</small>
+        <small id="etq-rotulo">Saiu por</small>
         <b id="etq-unidade">—</b>
         <div class="barras">
-          <div class="barra tipico"><span>Preço típico</span><span class="trilho"><i id="bar-tipico"></i></span><em id="val-tipico">—</em></div>
+          <div class="barra tipico"><span id="rot-ref">Preço típico</span><span class="trilho"><i id="bar-tipico"></i></span><em id="val-tipico">—</em></div>
           <div class="barra ticado"><span>No aviso</span><span class="trilho"><i id="bar-ticado"></i></span><em id="val-ticado">—</em></div>
         </div>
       </div>
-      <div class="etq-nav" id="etq-nav" aria-label="Trocar fralda"></div>
+      <div class="etq-nav" id="etq-nav" aria-label="Trocar achado"></div>
     </div>
   </div>
 </div>
 
 <section class="faixa">
   <div class="wrap">
-    <h2>Quem compra fralda conhece essa conta</h2>
+    <h2>Quem tem criança em casa conhece essa conta</h2>
     <ul class="dores-lista">
       <li><strong>Acabou na pior hora</strong><span>Última fralda às 22h, e o jeito é pagar o preço da farmácia da esquina.</span></li>
       <li><strong>Estocou e o bebê cresceu</strong><span>Aproveitou a promoção do M e, duas semanas depois, só serve o G.</span></li>
       <li><strong>O cupom bom durou uma tarde</strong><span>Quando alguém mandou o print, o código já tinha esgotado.</span></li>
       <li><strong>O presente do amiguinho pesou</strong><span>Todo mês tem aniversário na escola, e brinquedo bom não é barato.</span></li>
     </ul>
-    <p class="virada">Ninguém tem tempo de comparar pacote todo dia com criança pequena em casa. <em>O Tico tem.</em></p>
+    <p class="virada">Ninguém tem tempo de comparar preço todo dia com criança em casa. <em>O Tico tem.</em></p>
   </div>
 </section>
 
@@ -284,7 +285,7 @@ footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-h
 
 <section class="faixa">
   <div class="wrap">
-    <h2>Quanto sai cada fralda do seu pacote?</h2>
+    <h2>Ainda compra fralda? Veja quanto sai cada uma</h2>
     <p class="intro">Coloque o preço do pacote que você compra hoje. A conta mostra o custo por fralda e compara com o melhor achado do mesmo tamanho que já saiu no grupo.</p>
     <div class="calc">
       <div class="calc-in">
@@ -351,7 +352,7 @@ footer p{font-size:12px;color:var(--ardosia);max-width:72ch;margin:0 auto;line-h
 <section class="fecho">
   <div class="wrap">
     <img class="tico" src="imgs/tico-baby.png" alt="" width="120" height="120" loading="lazy">
-    <h2>O próximo pacote pode sair pela metade</h2>
+    <h2>O próximo achado já está no radar</h2>
     <p>Entra agora e recebe o próximo achado na hora, não no print atrasado.</p>
     <a class="btn-wpp cta" href="https://ir.ticapromos.com.br/babykids" data-local="fecho">
       <img src="../imgs/whatsapp.png" alt="" width="26" height="26">
@@ -388,7 +389,8 @@ var FRALDAS = [
   { foto:'B095R9CKYR', nome:'Huggies Natural Care RN',un:34, tam:'RN', por:20.93, tipico:29.90,  loja:'Mercado Livre', data:'03/09', cupom:true },
   { foto:'B0C3FSF7KF', nome:'Personal Baby Premium Protection P', un:40, tam:'P', por:25.50, tipico:38.99, loja:'Amazon', data:'02/09', cupom:false }
 ];
-var NA_ETIQUETA = 4;
+// Ordem da etiqueta do topo: fralda, brinquedo, fralda, livro... para os dois
+// públicos (com e sem fralda em casa) se verem nos primeiros segundos.
 var TAMANHOS = ['RN','P','M','G','XG','XXG'];   // ordem de tamanho, não alfabética
 
 var BRINQUEDOS = [
@@ -414,28 +416,41 @@ function brl(v, casas) {
 function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
 var reduz = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// ── Etiqueta por fralda ────────────────────────────────────────────────
+// ── Etiqueta do topo ───────────────────────────────────────────────────
+var ETIQUETA = [];
+function montarEtiqueta() {
+  var f = function (i) { var x = FRALDAS[i]; return { tipo:'fralda', foto:x.foto, nome:x.nome + ', ' + x.un + ' fraldas',
+    sub:'Pacote por ' + brl(x.por) + ' no ' + x.loja, por:x.por / x.un, ref:x.tipico / x.un, rotRef:'Preço típico', data:x.data, cupom:x.cupom }; };
+  var p = function (x, rot) { return { tipo:'produto', foto:x.foto, nome:x.nome, sub:x.loja, por:x.por, ref:x.ref, rotRef:rot, data:x.data, cupom:false }; };
+  ETIQUETA = [ f(0), p(BRINQUEDOS[0], 'Preço típico'), f(1), p(LIVROS[0], 'Preço de lista'), f(2), p(BRINQUEDOS[2], 'Preço típico') ];
+}
 var atual = 0, timer = null;
 function mostrar(i) {
-  var f = FRALDAS[i], e = $('etiqueta');
+  var a = ETIQUETA[i], e = $('etiqueta');
   atual = i;
   e.classList.add('trocando');
   $('bar-tipico').style.width = '0'; $('bar-ticado').style.width = '0';
   setTimeout(function () {
-    var uPor = f.por / f.un, uTip = f.tipico / f.un;
-    $('etq-foto').src = 'imgs/' + f.foto + '.jpg';
-    $('etq-foto').alt = f.nome;
-    $('etq-nome').textContent = f.nome + ', ' + f.un + ' fraldas';
-    $('etq-pacote').textContent = 'Pacote por ' + brl(f.por) + ' no ' + f.loja;
-    $('etq-data').textContent = 'Ticado em ' + f.data;
-    $('etq-cupom').hidden = !f.cupom;
-    $('etq-unidade').innerHTML = brl(uPor) + '<i>por fralda</i>';
-    $('val-tipico').textContent = brl(uTip);
-    $('val-ticado').textContent = brl(uPor);
+    $('etq-foto').src = 'imgs/' + a.foto + '.jpg';
+    $('etq-foto').alt = a.nome;
+    $('etq-nome').textContent = a.nome;
+    $('etq-pacote').textContent = a.sub;
+    $('etq-data').textContent = 'Ticado em ' + a.data;
+    $('etq-cupom').hidden = !a.cupom;
+    if (a.tipo === 'fralda') {
+      $('etq-rotulo').textContent = 'Saiu por';
+      $('etq-unidade').innerHTML = brl(a.por) + '<i>por fralda</i>';
+    } else {
+      $('etq-rotulo').textContent = Math.round((1 - a.por / a.ref) * 100) + '% abaixo, saiu por';
+      $('etq-unidade').textContent = brl(a.por);
+    }
+    $('rot-ref').textContent = a.rotRef;
+    $('val-tipico').textContent = brl(a.ref);
+    $('val-ticado').textContent = brl(a.por);
     e.classList.remove('trocando');
     requestAnimationFrame(function () {
       $('bar-tipico').style.width = '100%';
-      $('bar-ticado').style.width = Math.round(uPor / uTip * 100) + '%';
+      $('bar-ticado').style.width = Math.round(a.por / a.ref * 100) + '%';
     });
     var bts = $('etq-nav').children;
     for (var k = 0; k < bts.length; k++) bts[k].setAttribute('aria-current', String(k === i));
@@ -443,19 +458,19 @@ function mostrar(i) {
 }
 function agendar() {
   clearInterval(timer);
-  if (!reduz) timer = setInterval(function () { mostrar((atual + 1) % NA_ETIQUETA); }, 4500);
+  if (!reduz) timer = setInterval(function () { mostrar((atual + 1) % ETIQUETA.length); }, 4500);
 }
-(function () {
-  var nav = $('etq-nav'), html = '';
-  for (var i = 0; i < NA_ETIQUETA; i++) html += '<button type="button" aria-label="Ver ' + esc(FRALDAS[i].nome) + '"></button>';
-  nav.innerHTML = html;
+function iniciarEtiqueta() {
+  montarEtiqueta();
+  var nav = $('etq-nav');
+  nav.innerHTML = ETIQUETA.map(function (a) { return '<button type="button" aria-label="Ver ' + esc(a.nome) + '"></button>'; }).join('');
   nav.addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
     mostrar(Array.prototype.indexOf.call(nav.children, b)); agendar();
   });
   mostrar(0); agendar();
   document.addEventListener('visibilitychange', function () { if (document.hidden) clearInterval(timer); else agendar(); });
-})();
+}
 
 // ── Calculadora ────────────────────────────────────────────────────────
 var tamanho = 'M';
@@ -507,6 +522,7 @@ function cartao(a, rotuloRef) {
 }
 $('p-brinquedos').innerHTML = BRINQUEDOS.map(function (a) { return cartao(a, 'Típico'); }).join('');
 $('p-livros').innerHTML = LIVROS.map(function (a) { return cartao(a, 'Lista'); }).join('');
+iniciarEtiqueta();
 
 // Data comemorativa real, calculada no dia: Dia das Crianças até 12/10,
 // depois Natal. Nada de contagem inventada.
